@@ -1,10 +1,10 @@
 # Linux 101
 
-#### Linux Nedir?
+### Linux Nedir?
 
 Unix’e fikirsel ve teknik anlamda atıfta bulunarak geliştirilmiş açık kaynak kodlu, özgür ve ücretsiz (destek hariç) bir işletim sistemi çekirdeğidir. Çekirdeğin kaynak kodları GNU (Genel Kamu Lisansı) çerçevesinde özgürce dağıtılabilir, değiştirilebilir ve kullanılabilir. Linux ismi ilk olarak Linus Torvalds tarafından yazılan ve 5 Ekim 1991 Linux 0.02 etiketiyle duyurusu yapılan, Linux çekirdeğinden gelmektedir. Linux’un Unix ile herhangi bir kod ortaklığı bulunmamaktadır yani Linux’un kodları sıfırdan başlanılarak yazılmıştır.
 
-#### Distro Nedir?
+### Distro Nedir?
 
 Linux'un dağıtımlarına verilen isimdir. Bunlardan en yaygın olarak bilinenleri;
 
@@ -14,7 +14,7 @@ Linux'un dağıtımlarına verilen isimdir. Bunlardan en yaygın olarak bilinenl
 - OpenSUSE
 - Fedora
 
-#### Distrolar Arasındaki Farklar
+### Distrolar Arasındaki Farklar
 
 Dağıtımlar ihtiyaçlara göre geliştirilmişlerdir. Örneğin mint dağıtımı genelde görselliğe önem verir ve windowsdan gelen kullanıcılara cazip gelir. Ayrıca paket yönetim şekilleri ve dosya yapıları gibi farklılıklarda mevcuttur.
 
