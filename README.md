@@ -74,3 +74,52 @@ Terminal, metin tabanlı komutları yazabileceğiniz ve uygulayabileceğiniz bir
 İki sistem arasında ister yerel ağdaki bağlantıların isterse uzak bağlantıların güvenli bir şekilde yapılabilmesini sağlayan bir protokoldür. Bağlantı yapılan iki sistemin arasındaki t üm ağ trafiği şifrelenerek verilerin güvenliği sağlanır.
 
 Bağlantı yapılırken kimlik doğrulaması yapılmaktadır. Bu kimlik doğrulamasından sonra istemci ile sunucu arasında bir şifreleme oluşur ve bu şifreleme ile haberleşirler. Ssh için istemci ve sunucuda ssh servisinin yüklü olması gereklidir.[Linux komut satırı - Kemal Demirez]
+
+### Komut -History
+
+Terminalde çalıştırdığımız her komut aslında hemen kaybolmazlar. Bu komutlar bellekte tutulur ve History komutu ile en son verdiğiniz komutları listeleyebilirsiniz.
+
+Verdiğiniz son 10 komutu listeler:
+
+```shell
+history 10
+```
+### Komut -Man
+
+Terminalde bir komutun detaylarına erişmek için bu komut kullanılır.
+
+```shell
+man exit
+```
+
+### Komut -Shutdown
+
+Hemen kapat:
+```shell
+shutdown
+```
+
+Kapat ve yeniden aç (restart):
+
+```shell
+shutdown -r
+```
+
+20 dakika sonra kapat:
+
+```shell
+shutdown +20
+```
+
+20 dakika sonra restart:
+
+```shell
+shutdown -r 20
+```
+
+Saat 17:30 da kapat:
+
+```shell
+shutdown -h 17:30
+```
+
