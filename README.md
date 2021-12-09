@@ -77,7 +77,7 @@ Bağlantı yapılırken kimlik doğrulaması yapılmaktadır. Bu kimlik doğrula
 
 ## KOMUTLAR
 
-### Komut -History
+### History
 
 Terminalde çalıştırdığımız her komut aslında hemen kaybolmazlar. Bu komutlar bellekte tutulur ve History komutu ile en son verdiğiniz komutları listeleyebilirsiniz.
 
@@ -86,7 +86,7 @@ Verdiğiniz son 10 komutu listeler:
 ```shell
 history 10
 ```
-### Komut -Man
+### Man
 
 Terminalde bir komutun detaylarına erişmek için bu komut kullanılır.
 
@@ -94,7 +94,7 @@ Terminalde bir komutun detaylarına erişmek için bu komut kullanılır.
 man exit
 ```
 
-### Komut -Shutdown
+### Shutdown
 
 Hemen kapat:
 ```shell
