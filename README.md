@@ -1,5 +1,24 @@
 # Linux 101
 
+* [Linux Nedir?](#linux-nedir)
+* [Distro Nedir?](#distro-nedir)
+* [Distrolar Arasındaki Farklar](#distrolar-arasındaki-farklar)
+* [Bazı Distroların Dosya Yapıları](#bazı-distroların-dosya-yapıları)
+* [Paket Yönetim Sistemi](#paket-yönetim-sistemi)
+* [Bazı Distroalrın Paket Yöneticileri](#bazı-distroların-paket-yöneticileri)
+* [Debian Nedir?](#debian-nedir)
+* [CentOS Nedir?](#centos-nedir)
+* [Red Hat Nedir?](#red-hat-nedir)
+* [Shell Nedir?](#shell-nedir)
+* [Terminal Nedir?](#terminal-nedir)
+* [SSH Servisi](#ssh-servisi)
+* [Komutlar](#komutlar)
+  * [History](#history)
+  * [Man](#man)
+  * [Shutdown](#shutdown)
+
+------------
+
 ### Linux Nedir?
 
 Unix’e fikirsel ve teknik anlamda atıfta bulunarak geliştirilmiş açık kaynak kodlu, özgür ve ücretsiz (destek hariç) bir işletim sistemi çekirdeğidir. Çekirdeğin kaynak kodları GNU (Genel Kamu Lisansı) çerçevesinde özgürce dağıtılabilir, değiştirilebilir ve kullanılabilir. Linux ismi ilk olarak Linus Torvalds tarafından yazılan ve 5 Ekim 1991 Linux 0.02 etiketiyle duyurusu yapılan, Linux çekirdeğinden gelmektedir. Linux’un Unix ile herhangi bir kod ortaklığı bulunmamaktadır yani Linux’un kodları sıfırdan başlanılarak yazılmıştır.
