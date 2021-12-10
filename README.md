@@ -209,7 +209,7 @@ Sistemdeki suit biti ayarlanmış dosya/dizin bulma komutu:
 find / -perm -4000
 ```
 
-### umask Komutu
+### Umask Komutu
 
 Yeni oluşturulan dizin/dosyalar için varsayılan olarak verilecek izinleri ayarlamamıza yarar.
 
@@ -217,7 +217,7 @@ Yeni oluşturulan dizin/dosyalar için varsayılan olarak verilecek izinleri aya
 umask rwxr-r--r--
 ```
 
-### chattr Komutu
+### Chattr Komutu
 
 Bir dosya düşünün, config dosyası. Bu dosyanın içinde kesinlikle değişiklil yaplmasın diyorsanız bu komut tam size göre.
 
