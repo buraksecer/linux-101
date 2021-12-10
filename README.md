@@ -234,5 +234,5 @@ chattr -i text.txt
 Sistemde korumalı dosyalar neler merak ediyorsanız?
 
 ```shell
-Isattr -R <dizin>
+lsattr -R <dizin>
 ```
