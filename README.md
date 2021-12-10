@@ -16,6 +16,12 @@
   * [History](#history)
   * [Man](#man)
   * [Shutdown](#shutdown)
+* [Dosya/Klasör İzinleri](#dosya--klasör-i̇zinleri)
+  * [Yetkiler](#yetkiler)
+  * [Erişim Yetkilerinin Değiştirilmesi](#erişim-yetkilerinin-değiştirilmesi)
+  * [Suid Biti](#suid-biti)
+  * (Umask Komutu)[#umask-komutu]
+  * (Chattr Komutu)[#chattr-komutu]
 
 ------------
 
@@ -144,7 +150,7 @@ Saat 17:30 da kapat:
 shutdown -h 17:30
 ```
 
-## Dosya / Klasör İzinlerini Manipüle Etme
+## Dosya / Klasör İzinleri
 
 ### Yetkiler
 
