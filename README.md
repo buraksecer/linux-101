@@ -144,3 +144,89 @@ Saat 17:30 da kapat:
 shutdown -h 17:30
 ```
 
+## Dosya / Klasör İzinlerini Manipüle Etme
+
+### Yetkiler
+
+Terminali açıp bulunduğunuz dizinde **ls -l** komutunu çalıştırır iseniz aşağıdaki çıktıyı alacaksınız.
+
+[![Terminal ls -l](https://i.ibb.co/jh8s5Fm/rwrw.png "Terminal ls -l")](https://i.ibb.co/jh8s5Fm/rwrw.png "Terminal ls -l")
+
+Hemen alt satırda **total 32** yazıyor. Bu iç içe geçmiş dosyalar dahil bütün dosya-klasörleri sayar ve size verir. İlk satıra bakacak olursanız Desktop için izinleri görüyorsunuz. Burada her harfin bir anlamı vardır.
+
+- d -> burası bir dizindir, demektir. Ama eğer d yerine - (tire) olursa bu bir dosya demekti.
+- r -> okuma
+- w -> yazma
+- x -> çalıştırma
+
+İzinlerde dikkatimizi çeken, 3 ana parça şeklinde dağılmış olmaları. Örnek vermek gerekir ise **drwxr - xr - x ** burada tireler ile 3 ana parçaya ayrılmıştır.
+
+- drwxr -> 1. kısım dosya/dizin sahibinin yetkileri.
+- xr -> 2. kısım dosya sahibi ile aynı grupta bulunan kullanıcıların yetkileri.
+- x -> 3. kısım ise genel kullanıcı yetkilerini belirtir.
+
+### Erişim Yetkilerinin Değiştirilmesi
+
+Erişim yetkileri önemli bir konu olduğu için bu manipülasyon işlemini sadece root kullanıcısı yapabilir. Erişim yetkilerini değiştirirken **chmod** komutu kullanılır.
+
+```shell
+chmod <ugoa><+=-><rwxst><dosya/dizin>
+```
+- u: Dosya ya da dizin sahibi, user.
+- g: u ile aynı grupta bulunan kullanıcılar.
+- o: Diğer kullanıcılar.
+- a: Herkes.
+- +: Yetki ekleme.
+- -: Yetki çıkartma.
+- =: Yetki eşitleme.
+- r: Okuma
+- w: Yazma
+- x: Çalıştırma
+- s: Suid biti.
+- t: Sticky bit.
+
+### Suid Biti
+
+Bir dosya düşünün, bir kullanıcının yazma yetkisi yok. Fakat o kullanıcının geçici olarak yazması lazım. Suid biti ayarlanan kullanıcılar bu geçici yetkiye sahip olurlar.
+
+Suit biti ayarlama komutu:
+
+
+
+```shell
+chmod u+s text.txt
+```
+
+Sistemdeki suit biti ayarlanmış dosya/dizin bulma komutu:
+
+```shell
+find / -perm -4000
+```
+
+### umask Komutu
+
+Yeni oluşturulan dizin/dosyalar için varsayılan olarak verilecek izinleri ayarlamamıza yarar.
+
+```shell
+umask rwxr-r--r--
+```
+
+### chattr Komutu
+
+Bir dosya düşünün, config dosyası. Bu dosyanın içinde kesinlikle değişiklil yaplmasın diyorsanız bu komut tam size göre.
+
+```shell
+chattr +i text.txt
+```
+
+Dosyayı eski haline getirmek için ise;
+
+```shell
+chattr -i text.txt
+```
+
+Sistemde korumalı dosyalar neler merak ediyorsanız?
+
+```shell
+Isattr -R <dizin>
+```
