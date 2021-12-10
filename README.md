@@ -20,8 +20,8 @@
   * [Yetkiler](#yetkiler)
   * [Erişim Yetkilerinin Değiştirilmesi](#erişim-yetkilerinin-değiştirilmesi)
   * [Suid Biti](#suid-biti)
-  * (Umask Komutu)[#umask-komutu]
-  * (Chattr Komutu)[#chattr-komutu]
+  * [Umask Komutu](#umask-komutu)
+  * [Chattr Komutu](#chattr-komutu)
 
 ------------
 
