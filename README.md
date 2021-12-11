@@ -236,3 +236,112 @@ Sistemde korumalı dosyalar neler merak ediyorsanız?
 ```shell
 lsattr -R <dizin>
 ```
+
+
+### Bir Dosyayı Okuma
+
+Her hangi bir dosyanın içini okumak istiyorsak bunun farklı komutları vardır. Okumak istediğiniz dizinde olmalısınız ya da dizini komuttan sonra belirtmelisiniz.
+
+```shell
+cat test.txt
+```
+
+ya da 
+
+```shell
+cat  ./folder/test.txt
+```
+
+ya da 
+
+```shell
+tail test.txt
+```
+
+şekillerinde kullanıl sağlayabiliriz.
+
+### Dosya Monitoring
+
+Genellikle log dosyalarını izlemek için kullanılan bir komuttur fakat txt dosyalarını izlemek içinde kullanılabilir.
+
+```shell
+tail -c 50  text.txt  //50 byte'lık veri görüntüler
+tail text.txt -> son //10 satırı görüntüler
+tail -f  /var/log/syslog //log izlemek için kullanılır
+tail -F text.txt //txt dosyasının değişikliklerini anlık görüntüler ve bilgi verir.
+```
+
+### Vim Editörü
+
+Dosyalarınızı açıp düzenleyebileceğiniz bir text editörüdür. Şimdi vim komutlarına yakından bakalım.
+
+Debian base bir linux kullanıyorsanız önce bir install edelim.
+
+```shell
+sudo apt-get install vim
+```
+Açmak istediğiniz dosyayı;
+
+```shell
+vim test.txt
+```
+
+Şeklinde açabiliyorsunuz.
+
+> Aşağıdaki komutları dosyayı açtıktan sonra veriyorsunuz.
+
+Vim düzenleyicisini kullanmak için verilen bazı komutlar vardır. Tüm komutları ve belgelerini help komutuyla aşağıdaki gibi görebilirsiniz:
+
+```shell
+:help
+```
+
+Vim bazı modları vardır. Insert modunda dosyaya istediğiniz gibi girdi yapabilirsiniz. Bunun için **i** basmanız yeterlidir.
+
+Verileri bir dosyaya yazdık, şimdi görev, dosyayı kaydedip kapatmak ve bunu yapmak için Esc tuşuna basarak ilk ekleme modundan çıkmak. Bir komut yazmak için önce noktalı virgül (   :   ) yazın ve ardından wq! Ve sonra ENTER'a basın.
+
+```shell
+:wq!
+```
+
+Dosyayı kaydetmeden dosyadan çıkmak için sadece q komutunu kullanın! Aşağıdaki gibi
+
+```shell
+:Q!
+```
+
+İmlecin altındaki karakteri silmek için komut modunda **x** tuşu sağlıyoruz. İmleci silinmesi gereken karaktere getirin ve Esc tuşuna basın ve ardından **x** tuşuna basın.
+
+Geri almak için normal modda **u** tuşuna basın. Böylece en son yapılan değişiklik geri alınır. Değişiklikleri ileri sarmak için ise **ctrl+r** kullanılır.
+
+Bir dosyanız var ve binlerce satır var. Arama yapmak istiyorsunuz vim editörü ile şu şekilde arama numaraları vardır.
+
+**ESC** bastıktan sonra;
+
+```shell
+:/aranacakkelime
+```
+Eğer bir sonraki aranan kelimeye geçmek istiyorsanız;
+
+```shell
+:n
+```
+
+Bende shift + n oldu bu arada :)
+
+Bir önceki eşleşen kelime için ise:
+
+```shell
+:N
+```
+Dosyadaki kelimeyi değiştirmek için;
+
+```shell
+:s/arama sözcüğü/değiştirme sözcüğü/
+```
+
+Bütün dosyada değişiklik yapmak için: (gc tek tek onay ister sadece g onaysızdır ama güvenli değildir.)
+
+```shell
+:%s/arama sözcüğü/değiştirme sözcüğü/gc
+```
