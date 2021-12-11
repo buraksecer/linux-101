@@ -22,6 +22,9 @@
   * [Suid Biti](#suid-biti)
   * [Umask Komutu](#umask-komutu)
   * [Chattr Komutu](#chattr-komutu)
+* [Bir Dosyayı Okuma](#bir-dosyayı-okuma)
+* [Dosya Monitoring](#dosya-monitoring)
+* [Vim Editörü](#vim-editörü)
 
 ------------
 
