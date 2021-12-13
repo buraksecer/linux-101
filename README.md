@@ -25,6 +25,7 @@
 * [Bir Dosyayı Okuma](#bir-dosyayı-okuma)
 * [Dosya Monitoring](#dosya-monitoring)
 * [Vim Editörü](#vim-editörü)
+* [Aradığımız Dosyayı Bulma](#aradığımız-dosyayı-bulma)
 
 ------------
 
