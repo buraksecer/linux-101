@@ -5,7 +5,7 @@
 * [Distrolar Arasındaki Farklar](#distrolar-arasındaki-farklar)
 * [Bazı Distroların Dosya Yapıları](#bazı-distroların-dosya-yapıları)
 * [Paket Yönetim Sistemi](#paket-yönetim-sistemi)
-* [Bazı Distroalrın Paket Yöneticileri](#bazı-distroların-paket-yöneticileri)
+* [Bazı Distroların Paket Yöneticileri](#bazı-distroların-paket-yöneticileri)
 * [Debian Nedir?](#debian-nedir)
 * [CentOS Nedir?](#centos-nedir)
 * [Red Hat Nedir?](#red-hat-nedir)
