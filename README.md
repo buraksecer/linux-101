@@ -348,3 +348,25 @@ Bütün dosyada değişiklik yapmak için: (gc tek tek onay ister sadece g onays
 ```shell
 :%s/arama sözcüğü/değiştirme sözcüğü/gc
 ```
+
+### Aradığımız Dosyayı Bulma
+
+Bir dizin içerisinde veya bütün işletim sistemi içerisinde isme göre dosya araması yapabiliriz. Ayrıca sadece txt uzantılı dosyalarıda arayabiliriz.
+
+Bunun için **find** komutu kullanıyoruz.
+
+```shell
+find ./Desktop -name test.txt
+```
+
+Veya txt uzantılı dosyaları arayabiliriz.
+
+```shell
+find ./Desktop -name *.txt
+```
+
+Veya içinde test geçen dosyaları arayabiliriz bir nevi like gibi.
+
+```shell
+find ./Desktop -type f -name "*test*"
+```
