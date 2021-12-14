@@ -26,6 +26,12 @@
 * [Dosya Monitoring](#dosya-monitoring)
 * [Vim Editörü](#vim-editörü)
 * [Aradığımız Dosyayı Bulma](#aradığımız-dosyayı-bulma)
+* [Dosya/Klasör İşlemleri](#dosya-i̇şlemleri)
+  * [Dosya Oluşturma](#dosya-oluşturma)
+  * [Dosya Silme](#dosya-silme)
+  * [Dosya Kopyalama](#dosya-kopyalama)
+  * [Dosya Taşıma](#dosya-taşıma)
+  * [Dosya İsim Değiştirme](#dosya-i̇sim-değiştirme)
 
 ------------
 
