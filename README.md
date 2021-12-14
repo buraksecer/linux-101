@@ -371,3 +371,80 @@ Veya içinde test geçen dosyaları arayabiliriz bir nevi like gibi.
 ```shell
 find ./Desktop -type f -name "*test*"
 ```
+
+### Dosya İşlemleri
+
+Dizin işlemlerinde **-r** kullanılmalıdır.
+
+#### Dosya Oluşturma
+
+```shell
+mkdir dosya1
+```
+
+Dizinli dosya oluşturma
+
+```shell
+mkdir dosya1/test
+```
+
+İç içe oluşturma
+
+```shell
+mkdir -p resim/b1/b2
+```
+
+Klasör oluşturma;
+
+```shell
+touch text.txt
+```
+
+#### Dosya Silme
+
+-r ile kullanılırsa dizin silebiliriz.
+
+```shell
+rm -r dosya
+```
+
+Sadece dosya silmek için;
+
+```shell
+rm dosya 
+```
+
+ya da
+
+```shell
+rmdir dosya
+```
+
+#### Dosya Kopyalama
+
+```shell
+cp -r kopyalanan_dosya kopyalancak_konum
+```
+
+Eğer bir dizin değil ise;
+
+```shell
+cp kopyalanan_dosya kopyalancak_konum
+```
+#### Dosya Taşıma
+
+Dosyayı olduğu gibi taşımak istiyorsanız;
+
+```shell
+mv dosya1 tasinacagi_konum
+```
+
+#### Dosya İsim Değiştirme
+
+mv komutu ile yapılabiliyor. İlk önce değiştirmek istediğiniz dosya ya da klasör yazılıyor sonra yeni ismi.
+
+```shell
+mv dosya1 yeni_isim
+```
+
+
