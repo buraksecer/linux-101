@@ -453,4 +453,34 @@ mv komutu ile yapılabiliyor. İlk önce değiştirmek istediğiniz dosya ya da 
 mv dosya1 yeni_isim
 ```
 
+### Dosya İçinde Kelime Arama
 
+Bir dosyanız var 1000 satırlık ve içinde şu kelime geçiyor mu bakmak istiyorsunuz.
+
+```shell
+grep sorgu dosya
+```
+
+Mesela log.txt var elinizde ve içinde error var mı bakmak istiyorsunuz.
+
+```shell
+grep error log.txt
+```
+
+Büyük / küçük harf ayırmadan arama için;
+
+```shell
+grep -i sorgu dosya
+```
+
+Ya da kaç tane error kelimesi geçiyor şu log dosyasında bakalım?
+
+```shell
+grep -c error log.txt
+```
+
+Ya da bir dosyalar dizininiz var acaba diyorsunuz şu error nerde hangi dosyada var?
+
+```shell
+grep -l error ./*
+```
