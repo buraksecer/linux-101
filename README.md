@@ -32,6 +32,7 @@
   * [Dosya Kopyalama](#dosya-kopyalama)
   * [Dosya Taşıma](#dosya-taşıma)
   * [Dosya İsim Değiştirme](#dosya-i̇sim-değiştirme)
+* [Dosya İçinde Kelime Arama](#dosya-i̇çinde-kelime-arama)
 
 ------------
 
