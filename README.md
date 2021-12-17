@@ -485,3 +485,74 @@ Ya da bir dosyalar dizininiz var acaba diyorsunuz şu error nerde hangi dosyada 
 ```shell
 grep -l error ./*
 ```
+
+### Create a Environment Variable
+
+İşletim sisteminde bazı sabit değerler vardır. Bütün sistem kullanıcılar veya bazıları bu sabitleri istedikleri zaman okuyup kullanırlar. Şimdi bizde bu değişkenleri nasıl tanımlarız ve bu değişkenlerin listesini nasıl okuruz buna bakacağız.
+
+burak isminde bir değişken tanımlayacağız.
+
+```shell
+export burak=31
+```
+
+Tanım yaptıktan sonra;
+
+```shell
+printenv
+```
+
+Komutunu çalıştırıp, tanımladığımız ortam değişkeni listede var mı bakalım?
+
+Eğer linux restart olur ise bu değişken ne yazık ki kaybolur. Bunu kalıcı hale getirmek için **/etc/bashrc** dosyasının içine bu **export** komutunu eklemeniz gerekiyor.
+
+### Process İzleme
+
+İşletim sisteminde en önemli konulardan biri tabii ki process. Bir çok şekilde farklı yöntemler ile terminalden izleme yapabiliyoruz.
+
+Aşağıdaki komut sayesinde,
+
+- a: Bütün process'leri göster.
+- u: Diğer kullanıcılar da dahil olmak üzere göster.
+
+```shell
+ps -au
+```
+
+Sadece belli bir kullanıcının precess'lerini listelemek için;
+
+```shell
+ps -u root
+```
+Birde gerçek zamanlı akış sağlayan bir komut var;
+
+```shell
+top
+```
+[![top](https://i.ibb.co/72trPs9/top.png "top")](https://i.ibb.co/72trPs9/top.png "top")
+
+Gelişmiş bir monitöring için(**sudo apt install atop **gerekir);
+
+```shell
+atop
+```
+
+[![atop](https://i.ibb.co/wN8SRh6/atop.png "atop")](https://i.ibb.co/wN8SRh6/atop.png "atop")
+
+Etkileşimli süreç görüntüleyici için(**sudo apt install htop**)
+
+```shell
+htop
+```
+
+[![htop](https://i.ibb.co/GJD8nbS/htop.png "htop")](https://i.ibb.co/GJD8nbS/htop.png "htop")
+
+Ağaç bağlantılı process listesi için ise:
+
+```shell
+pstree
+```
+
+[![pstree](https://i.ibb.co/ZcXg23n/pstree.png "pstree")](https://i.ibb.co/ZcXg23n/pstree.png "pstree")
+
+
