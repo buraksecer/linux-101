@@ -35,7 +35,7 @@
 * [Dosya İçinde Kelime Arama](#dosya-i̇çinde-kelime-arama)
 * [Process İzleme](#process-i̇zleme)
 * [Foreground - Background Process](#foreground---background-process)
-* [Cron Jobs](#cron-job)
+* [Cron Jobs](#cron-jobs)
 
 ------------
 
@@ -605,7 +605,7 @@ bg 1
 
 yaparak process'i background process yapıyoruz.
 
-### Cron Job
+### Cron Jobs
 
 Belli bir aralık ile çalışan iş parçacıklarına cron job diyoruz. Bir cron çalışma zamanı nasıl anlaşılır?
 
