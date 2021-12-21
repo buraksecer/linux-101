@@ -36,6 +36,13 @@
 * [Process İzleme](#process-i̇zleme)
 * [Foreground - Background Process](#foreground---background-process)
 * [Cron Jobs](#cron-jobs)
+* [Kullanıcı İşlemleri](#kullanıcı-i̇şlemleri)
+  * [Kullanıcı Ekleme](#kullanıcı-ekleme)
+  * [Kullanıcı Silme](#kullanıcı-silme)
+  * [Kullanıcı Bilgilerini Listeleme](#kullanıcı-bilgilerini-listeleme)
+  * [Kullanıcı Bilgilerini Güncelleme](#kullanıcı-bilgilerini-güncelleme)
+  * [Kullanıcı Parola Değiştirme](#kullanıcı-parola-değiştirme)
+* [Kullanıcı Değiştirme Ve Başka Kullanıcı Adına İşlem Yapma](#kullanıcı-değiştirme-ve-başka-kullanıcı-adına-i̇şlem-yapma) 
 
 ------------
 
