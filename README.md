@@ -585,6 +585,26 @@ sleep 20 &
 
 Derseniz, git bu işi bir background process olarak arkada asenkron yap. Bu sefer size bir progress id dönecektir ve jobs yazdığınızda devam ediyor olarak yarattığınız progress'i göreceksiniz.
 
+Bir process foreground yapmak istiyorsanız önce
+
+```shell
+jobs -l
+```
+
+Önce çalışan jobları listeliyoruz ve istediğimiz job index id alıyoruz.
+
+```shell
+fg 1
+```
+
+yaparak bu process artık foreground 'a çeviriyoruz. Aynı şekilde;
+
+```shell
+bg 1
+```
+
+yaparak process'i background process yapıyoruz.
+
 ### Cron Job
 
 Belli bir aralık ile çalışan iş parçacıklarına cron job diyoruz. Bir cron çalışma zamanı nasıl anlaşılır?
