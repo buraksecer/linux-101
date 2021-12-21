@@ -557,3 +557,69 @@ pstree
 [![pstree](https://i.ibb.co/ZcXg23n/pstree.png "pstree")](https://i.ibb.co/ZcXg23n/pstree.png "pstree")
 
 
+### Foreground - Background Process
+
+[Process izlemeyi](https://github.com/buraksecer/linux-101#process-i%CC%87zleme "Process izlemeyi") daha önce işlemiştik. Şimdi bu process tiplerine ve nasıl bir process oluşturabiliriz bunlara bakacağız.
+
+İş parçacıklarının listesini;
+
+```shell
+jobs
+```
+
+Komutu ile alabiliyoruz.
+
+Foreground, siz bir komut verdiğiniz vakit teminalde o komutun/işlemin bitmesini bekliyoruz ya hani, işte o foreground oluyor. Yani işi ön yüzde yapıyor ve terminali kitliyor. Background ise bunun tam tersi, iş arka planda asenkron şekilde akıyor. Haydi bir örnek yapalım;
+
+```shell
+sleep 20
+```
+
+Bu komutu çalıştırırsanız 20 saniye boyunca uyutur ve siz hiç bir komut vb giriş yapamazsınız bu bize foreground 'u verir. Fakat;
+
+```shell
+sleep 20 &
+```
+
+Derseniz, git bu işi bir background process olarak arkada asenkron yap. Bu sefer size bir progress id dönecektir ve jobs yazdığınızda devam ediyor olarak yarattığınız progress'i göreceksiniz.
+
+### Cron Job
+
+Belli bir aralık ile çalışan iş parçacıklarına cron job diyoruz. Bir cron çalışma zamanı nasıl anlaşılır?
+
+```shell
+# Example of job definition:
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+# |  |  |  |  |
+# *  *  *  *  * user-name command to be executed
+17 *	* * *	root    cd / && run-parts --report /etc/cron.hourly
+```
+
+Eğer linux'unuzda cd /etc gidip cat crontab derseniz bu açıklama ile karşılaşacaksınız. Burada örnek bir cron ve üzerinde cron time nasıl kurulur anlatmış ama ben size bir site vereceğim çok sevdiğim bir sitedir. [CrontabGuru](https://crontab.guru/ "CrontabGuru") sitesinden kolayca bir cron time çıktısı alabilirsiniz.
+
+Bunları anlattıktan sonra bir cron job oluşturalım.
+
+crontab -e | -r | -l
+
+- e: Edit
+- r: Remove
+- l: Liste
+
+Aşağıdaki komut sayesinde cron dosyamızı edit yapabiliriz. Size ilk açılırken hangi editör ile devam edelim diye soruyor, ben vim ile devam ettim.
+
+```shell
+crontab -e
+```
+
+Şimdi bir satır olarak aşağıdaki komutu ekliyoruz.
+
+```shell
+*/5 * * * * tar -cvzf /sikistirilacak/dizin/log.tar.gz  /sikisacak/dizin
+```
+
+Kayıt edip çıktıktan sonra artık job 5 dakikada bir log sıkıştırma dosyası oluşturur ve üzerine yazar.
+
