@@ -645,3 +645,54 @@ crontab -e
 
 Kayıt edip çıktıktan sonra artık job 5 dakikada bir log sıkıştırma dosyası oluşturur ve üzerine yazar.
 
+
+### Kullanıcı İşlemleri
+
+####  Kullanıcı Ekleme
+
+```shell
+adduser burak
+```
+Bu komutu verdikten sonra sizden bir şifre isteyecek. Şifre girdikten sonra artık bir kullanıcı oluşturdunuz hayırlı olsun. /home klasörünün altında kullanıcı adı ile bir klasör göreceksiniz.
+
+#### Kullanıcı Silme
+
+```shell
+deluser --remove-home burak
+```
+
+#### Kullanıcı Bilgilerini Listeleme
+
+```shell
+chage -l burak
+```
+
+#### Kullanıcı Bilgilerini Güncelleme
+
+```shell
+chfn burak
+```
+
+#### Kullanıcı Parola Değiştirme
+
+```shell
+passwd burak
+```
+
+### Kullanıcı Değiştirme Ve Başka Kullanıcı Adına İşlem Yapma
+
+Şimdi bu yukarıdaki oluşturduğumuz kullanıcıya geçiş yapalım ve onun kabuğunda çalışalım.
+
+```shell
+su - burak
+```
+Şifre isteyecektir.
+
+Peki bir diğer komutta başka kullanıcıya geçiş yapmaktır fakat sadece komutları o kullanıcı olarak verirsiniz.
+
+```shell
+su burak
+```
+
+
+
