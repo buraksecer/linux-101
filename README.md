@@ -728,3 +728,86 @@ su burak
 - df --help – Kullanabileceğiniz diğer yararlı komutları gösterecek ve onlarla ilgili daha fazla bilgi sağlayacaktır.
 
 
+### Bilgisayarın Ip Adreslerini Listeleme
+
+```shell
+curl ifconfig.me
+```
+
+### Bir Domaini Pingleme
+
+Bir web sitesine 1 paket gönderip cevap alabiliyor muyuz bakmaya pingleme denir.
+
+Örnek bir ping komutu:
+
+```shell
+ping google.com
+```
+
+Burada siz durdurana kadar foreground bir process çalışır.
+
+```shell
+ping -c 3 google.com
+```
+
+Derseniz 3 adet ping atacak ve sonlanacak fakat hala bir foreground process'dir.
+
+### Bir Domainin Dns Kayıtlarını Listeleme
+
+Local linux dns ayarları ve listesi için;
+
+```shell
+cat /etc/resolv.conf 
+```
+
+Bir domain ayrıntıları için;
+
+ ```shell
+nslookup -type=mx google.com
+```
+
+### Package Manager İle Bir Paket Yükleme
+
+Yerel sisteminizin yüklü paketlerinin en son sürüm bilgilerini güncellemek için;
+
+Aşağıdaki komut paketleri update etmez sadece güncel bağlılıklarını ve paketlerin hangi repoları kullandığını update eder, bu listeye **/etc/apt/sources.list **'den erişebiliriz.
+
+```shell
+sudo apt-get update
+```
+
+Haydi şimdi linux'umuza node kuralım.
+
+```shell
+sudo apt install nodejs
+```
+
+Yükleme bittikten sonra bir kontrol şart:
+
+```shell
+node –version
+```
+
+### Bir Uzak Sunucuya SSH İle Uzaktan Bağlanma
+
+SSH, şifreli bir şekilde iki ağ arasında iletişimi sağlayan bir tüneldir. Bağlantı yapılırken bilgiler karşı tarafa şifreli bir şekilde gönderilir. Önemli nokta ssh yapılabilmesi için karşı tarafta ssh servisinin çalışıyor olması gerekmektedir.
+
+Öncelikle SSH servisi ne alemde bakalım ve eğer aktif değilse başlatalım;
+
+```shell
+service ssh status
+```
+
+SSH servisini başlatalım:
+
+```shell
+service ssh start
+```
+
+Şimdi artık SSH bağlantısı açabiliriz.
+
+```shell
+ssh kullanici@ipadresi
+```
+
+bu komutan sonra sizden şifre isteyecek ve laps diye bağlantı açılacak. Artık uzak sunucunuzun linuxuna bağlandınız hayırlı olsun.
