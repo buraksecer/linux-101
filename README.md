@@ -44,6 +44,11 @@
   * [Kullanıcı Parola Değiştirme](#kullanıcı-parola-değiştirme)
 * [Kullanıcı Değiştirme Ve Başka Kullanıcı Adına İşlem Yapma](#kullanıcı-değiştirme-ve-başka-kullanıcı-adına-i̇şlem-yapma) 
 * [Disk Durumu İnceleme](#disk-durumunu-i̇nceleme)
+* [Bilgisayarın Ip Adreslerini Listeleme](#bilgisayarın-ip-adreslerini-listeleme)
+* [Bir Domaini Pingleme](#bir-domaini-pingleme)
+* [Bir Domainin Dns Kayıtlarını Listeleme](#bir-domainin-dns-kayıtlarını-listeleme)
+* [Package Manager İle Bir Paket Yükleme](#package-manager-i̇le-bir-paket-yükleme)
+* [Bir Uzak Sunucuya SSH İle Uzaktan Bağlanma](#bir-uzak-sunucuya-ssh-i̇le-uzaktan-bağlanma)
 
 ------------
 
