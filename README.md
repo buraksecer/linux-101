@@ -701,5 +701,29 @@ Peki bir diğer komutta başka kullanıcıya geçiş yapmaktır fakat sadece kom
 su burak
 ```
 
+### Disk Durumunu İnceleme
+
+([Kaynak](https://www.hostinger.web.tr/rehberler/disk-kullanimi-nedir/ "Kaynak"))
+
+[![pasted-image-0-75](https://www.hostinger.web.tr/rehberler/wp-content/uploads/sites/6/2017/04/pasted-image-0-75.png "pasted-image-0-75")](https://www.hostinger.web.tr/rehberler/wp-content/uploads/sites/6/2017/04/pasted-image-0-75.png "pasted-image-0-75")
+
+- Dosya sistemi (Filesystem) – Dosya sisteminin adını verir.
+- Boyut (Size) – Dosya sisteminin toplam boyutunu gösterir.
+- Kullanılan (Used) – Dosya sisteminde kullanılan disk alanını boyutunu gösterir.
+- Kullanılabilir (Available) – Dosya sisteminde boş olan disk alanı boyutunu gösterir.
+- Kullanılan% (Use%) – Kullanılan disk alanı yüzdesini gösterir.
+- Bağlı olduğu (Mounted On) – Son sütun dosya sisteminin nereye bağlı olduğunu gösterir.
+- df -h – Daha iyi ve daha insan tarafından okunabilir formatta gösterecek. Bu şekilde disk boyutu GB ile gösterilecek. (Eğer boyut 1 GB’dan daha küçükse MB veya hatta B ile gösterilir.)
+- df -m – Dosya sistemi kullanımını MB ile göstermek için kullanılabilir.
+- df -k – Önceki gibi, dosya sistemi bilgisini KB ile göstermek için kullanılabilir.
+- df -T – Dosya sistemi türünü göstermek için kullanılır (yeni bir sütunda görünecek).
+- df -ht /home – Bu komutu kullanarak belirli bir dosya sistemi hakkında bilgileri (insanın okuyabileceği formatta) görebilirsiniz.
+- df --help – Kullanabileceğiniz kullanışlı komutları ve komutlar hakkındaki bilgileri gösterir.
+- du /home/user/Desktop/ – Bu seçenek, kullanıcının Masaüstü’nü görmenizi sağlar ve Masaüstü’müzdeki klasörlerin ve dosyaların disk kullanımıyla ilgili bilgi verir.
+- du -h /home/user/Desktop/ – Tıpkı df‘de olduğu gibi -h seçeneği de bilgileri daha okunabilir bir biçimde görüntüler.
+- du -sh /home/user/Desktop/ – -s seçeneği belirtilen bir klasörün toplam boyutunu verir (bu durumda, Masaüstü’nün toplam boyutunu gösterir).
+- du -m /home/user/Desktop/ – Tıpkı df‘de olduğu gibi, bu da bize Megabyte cinsinden bilgi sağlayacaktır (bilgileri kilobayt cinsinden görmek için -k kullanabilirsiniz.
+- du -h --time /home/user/Desktop/ – Bu bize, görüntülenen dosya ve klasörlerin son değiştirilme tarihini baz alarak bilgi verecektir.
+- df --help – Kullanabileceğiniz diğer yararlı komutları gösterecek ve onlarla ilgili daha fazla bilgi sağlayacaktır.
 
 
