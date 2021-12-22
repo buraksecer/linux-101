@@ -43,6 +43,7 @@
   * [Kullanıcı Bilgilerini Güncelleme](#kullanıcı-bilgilerini-güncelleme)
   * [Kullanıcı Parola Değiştirme](#kullanıcı-parola-değiştirme)
 * [Kullanıcı Değiştirme Ve Başka Kullanıcı Adına İşlem Yapma](#kullanıcı-değiştirme-ve-başka-kullanıcı-adına-i̇şlem-yapma) 
+* [Disk Durumu İnceleme](#disk-durumunu-i̇nceleme)
 
 ------------
 
