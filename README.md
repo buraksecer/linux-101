@@ -1,3 +1,10 @@
+# Select Language
+
+|Languages   | Links  |
+| ------------ | ------------ |
+| Turkish  | [Click Me](https://github.com/buraksecer/linux-101 "Click Me")  |
+| English |  [Click Me ](https://github.com/buraksecer/linux-101/tree/master/language/eng "Click Me ")|
+
 # Linux 101
 
 * [Linux Nedir?](#linux-nedir)
