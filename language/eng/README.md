@@ -1,4 +1,4 @@
-# Linux 101
+# Linux 101 (We are translating, please wait...)
 
 * [What is Linux?](#)
 * [What is Distro?](#)
