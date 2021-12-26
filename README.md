@@ -454,6 +454,14 @@ Eğer bir dizin değil ise;
 ```shell
 cp kopyalanan_dosya kopyalancak_konum
 ```
+
+Eğer ssh ile taşıma yapılacak ise;
+
+```shell
+scp kopyalanan_dosya kopyalancak_konum
+scp myfile.txt remoteuser@remoteserver:/remote/folder/
+```
+
 #### Dosya Taşıma
 
 Dosyayı olduğu gibi taşımak istiyorsanız;
