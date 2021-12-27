@@ -50,6 +50,8 @@
 * [Let's Upload a Package with Package Manager](#)
 * [Let's Connect Remote Server with SSH](#)
 
+------------
+
 ### What is Linux?
 
 It is an open source, free (excluding support) operating system kernel developed with reference to Unix in an technical sense.
