@@ -1,6 +1,6 @@
 # Linux 101 (We are translating, please wait...)
 
-* [What is Linux?](#)
+* [What is Linux?](#what-is-linux)
 * [What is Distro?](#)
 * [Differences Between Distros](#)
 * [File Structures of Some Distros](#)
