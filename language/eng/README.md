@@ -55,3 +55,28 @@
 ### What is Linux?
 
 It is an open source, free (excluding support) operating system kernel developed with reference to Unix in an technical sense.
+
+### What is Distro?
+
+It is the name given to the distributions of Linux. The most widely known of these;
+
+- Debian
+- Linux Mint
+- Ubuntu
+- OpenSUSE
+- Fedora
+
+### Differences Between Distros
+
+The distros has developed by needs, example mint distro usually focus ui and tempting for windows users. Also it has different as package management and folder structure.
+
+### File Structures of Some Distros
+
+- [Linux Mint](https://community.linuxmint.com/tutorial/view/355 "Linux Mint")
+- [Debian](https://www.debian.org/releases/buster/amd64/apcs02.en.html "Debian")
+- [Ubuntu](https://help.ubuntu.com/community/LinuxFilesystemTreeOverview "Ubuntu")
+- [Fedora](https://fedoraproject.org/wiki/Docs/Drafts/DirectoryStructure "Fedora")
+
+### [Package](https://tr.wikipedia.org/wiki/Paket_y%C3%B6netim_sistemi "Package") Management System
+
+
