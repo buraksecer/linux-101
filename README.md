@@ -831,3 +831,39 @@ ssh kullanici@ipadresi
 ```
 
 bu komutan sonra sizden şifre isteyecek ve laps diye bağlantı açılacak. Artık uzak sunucunuzun linuxuna bağlandınız hayırlı olsun.
+
+### Linux Servisleri
+
+#### systemd
+
+Systemd servislerin abisidir. Nerde bir servis çalışır ya da durur ise orada systemd vardır. Genelde linux dağıtımları systemd kullanır. İşletim sistemi her başladığında servisleri çalıştıran, logları toplayan abimizdir.
+
+`Linux’ta çalıştırdığımız web ve uygulama sunucuları, SSH, DNS, telnet, vb servisler systemd veya benzeri (örneğin upstart) bir init system tarafından yönetilirler. Bu sistemlere init system denmesinin sebebi, Linux'un bu sistemleri açılış sırasında (boot) diğer process'leri başlatan ve PID (Process ID) 1 ile ifade edilen init process'i olarak kullanmasıdır([kaynak](gokhansengun)).`
+
+#### systemctl
+
+systemd yönetimini sağlayan komuttur. Gelin bazı komutları inceleyelim.
+
+```shell
+sudo systemctl status //Bütün servislerin durumunu gösterir.
+```
+
+```shell
+sudo systemctl status apache2 //apache2 servisinin durumunu gösterir.
+```
+
+```shell
+sudo systemctl start/restart/stop apache2  //apache2 servisini başlatmak/yeniden başlatmak/durdurmak için kullanılan komut.
+```
+
+```shell
+sudo service —status-all | less //Servislerin durumunu gösterir ve listede scrool yapmanı sağlar.
+```
+
+```shell
+sudo systemctl disable/enable apache2 //apache2 servisini deaktif/aktif etme. Deaktif edilen servis kendi kendine(linux restart vb.) tekrar başlatılmaz!
+```
+
+```shell
+sudo journalctl -u apache2.service //Apache2 servisinin loglarını döker.
+```
