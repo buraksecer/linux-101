@@ -856,7 +856,8 @@ sudo systemctl status apache2 //apache2 servisinin durumunu gösterir.
 ```
 
 ```shell
-sudo systemctl start/restart/stop apache2  //apache2 servisini başlatmak/yeniden başlatmak/durdurmak için kullanılan komut.
+sudo systemctl start/restart/stop apache2 
+//apache2 servisini başlatmak/yenidenbaşlatmak/durdurmak için kullanılan komut.
 ```
 
 ```shell
