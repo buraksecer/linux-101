@@ -57,8 +57,8 @@
 * [Package Manager İle Bir Paket Yükleme](#package-manager-i̇le-bir-paket-yükleme)
 * [Bir Uzak Sunucuya SSH İle Uzaktan Bağlanma](#bir-uzak-sunucuya-ssh-i̇le-uzaktan-bağlanma)
 * [Linux Servisler](#linux-servisler)
-  * [systemd](systemd) 
-  * [systemctl](systemctl)
+  * [systemd](#systemd) 
+  * [systemctl](#systemctl)
 
 ------------
 
