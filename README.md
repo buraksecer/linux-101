@@ -56,6 +56,9 @@
 * [Bir Domainin Dns Kayıtlarını Listeleme](#bir-domainin-dns-kayıtlarını-listeleme)
 * [Package Manager İle Bir Paket Yükleme](#package-manager-i̇le-bir-paket-yükleme)
 * [Bir Uzak Sunucuya SSH İle Uzaktan Bağlanma](#bir-uzak-sunucuya-ssh-i̇le-uzaktan-bağlanma)
+* [Linux Servisler](#linux-servisler)
+ * [systemd](systemd) 
+ * [systemctl](systemctl)
 
 ------------
 
@@ -832,7 +835,7 @@ ssh kullanici@ipadresi
 
 bu komutan sonra sizden şifre isteyecek ve laps diye bağlantı açılacak. Artık uzak sunucunuzun linuxuna bağlandınız hayırlı olsun.
 
-### Linux Servisleri
+### Linux Servisler
 
 #### systemd
 
@@ -861,7 +864,8 @@ sudo service —status-all | less //Servislerin durumunu gösterir ve listede sc
 ```
 
 ```shell
-sudo systemctl disable/enable apache2 //apache2 servisini deaktif/aktif etme. Deaktif edilen servis kendi kendine(linux restart vb.) tekrar başlatılmaz!
+sudo systemctl disable/enable apache2 //apache2 servisini deaktif/aktif etme. 
+//Deaktif edilen servis kendi kendine(linux restart vb.) tekrar başlatılmaz!
 ```
 
 ```shell
