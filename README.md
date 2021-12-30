@@ -187,6 +187,66 @@ Saat 17:30 da kapat:
 shutdown -h 17:30
 ```
 
+### dig
+
+Açılımı Domain Information Gropher demektir. Yani Alan Bilgisi Toplayıcısı diyebiliriz.
+
+dig komutu ile A kayıtları görüntüleyebiliriz.
+
+`Adres (A) kaydı, host adını bir IP adresine yönlendirir. Örneğin, server.domainame.com adresinin direkt olarak sizin ana bilgisayarınıza (ip adresi 111.111.111.111 olsun) yönlendirilmesini istiyorsanız, şunun gibi bir kayıt girmeniz gerekir: domainame.com. A 111.111.111.111`
+
+```shell
+dig buraksecer.com // Answer Section altında A kaydını görebiliriz.
+```
+
+```shell
+dig buraksecer.com -t NS //name server listeler
+```
+
+###  curl
+
+client url kısaltınca c-url -> curl olmuş :tw-1f37a: 
+
+Sitelerle iletişim kurmamızı sağlayan komuttur. Http protokolü en bilindik kullanımdır ayrıca;
+
+curl, aşağıdaki protokolleri destekler:
+
+- HTTP ve HTTPS
+- SFTP
+- SCP
+- IMAP ve IMAPS
+- POP3 ve POP3S
+- TELNET
+- SMB ve SMBS
+- GOPHER
+- LDAP ve LDAPS
+- SMTP ve SMTPS
+- FTP ve FTPS
+
+Hadi bir get isteği atalım;
+
+```shell
+curl https://www.buraksecer.com //sitenin içeriğini size döner. 
+```
+
+Eğer benim güncel cv mi komutu çalıştırdığınız dizine indirmek istiyorsanız buyrun :tw-1f60e: 
+
+```shell
+curl -o burak.pdf https://www.buraksecer.com/wp-content/uploads/2021/12/burak-secer-up.pdf
+```
+Şimdi bir FTP protokolü kullanalım;
+Dosya indirme işlemi,
+
+```shell
+curl -u root:password -O ftp://sunucu/dosya.tar.gz
+```
+
+Dosya yükleme işlemi,
+```shell
+curl -u root:password -T dosya.tar.gz ftp://sunucu
+```
+Daha fazlası için man curl yazıp inceleyebilirsiniz.
+
 ## Dosya / Klasör İzinleri
 
 ### Yetkiler
