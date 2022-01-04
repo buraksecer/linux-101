@@ -1,9 +1,16 @@
-# Select Language
+# Dil Seçimi (Select Language)
 
-|Languages   | Links  |
+|Diller   | Linkler  | 
 | ------------ | ------------ |
-| Turkish  | [Click Me](https://github.com/buraksecer/linux-101 "Click Me")  |
-| English |  [Click Me ](https://github.com/buraksecer/linux-101/tree/master/language/eng "Click Me ")|
+| Türkçe  :tr: | [Tıklaa](https://github.com/buraksecer/linux-101 "Tıklaa")  |
+| English :england:|  [Click Me!](https://github.com/buraksecer/linux-101/tree/master/language/eng "Click Me! ")|
+
+# Örnekler (Examples)
+
+|Örnek İsmi   | Link  :tr: | Link :england:|
+| ------------ | ------------ | ------------ | 
+| Counter  | [Tıklaa](https://github.com/buraksecer/linux-101/tree/master/shell-scripts/tr/counter "Tıklaa")  | [Click Me!](https://github.com/buraksecer/linux-101/tree/master/shell-scripts/eng/counter "Click Me!") |
+
 
 # Linux 101
 
