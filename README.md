@@ -2,7 +2,7 @@
 
 |Diller   | Linkler  | 
 | ------------ | ------------ |
-| Türkçe  :tr: | [Tıklaa](https://github.com/buraksecer/linux-101 "Tıklaa")  |
+| Turkish  :tr: | [Tıklaa](https://github.com/buraksecer/linux-101 "Tıklaa")  |
 | English :england:|  [Click Me!](https://github.com/buraksecer/linux-101/tree/master/language/eng "Click Me! ")|
 
 # Örnekler (Examples)
