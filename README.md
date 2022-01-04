@@ -52,6 +52,7 @@
 * [Process İzleme](#process-i̇zleme)
 * [Foreground - Background Process](#foreground---background-process)
 * [Cron Jobs](#cron-jobs)
+  * [Cron Job Log Monitor]()
 * [Kullanıcı İşlemleri](#kullanıcı-i̇şlemleri)
   * [Kullanıcı Ekleme](#kullanıcı-ekleme)
   * [Kullanıcı Silme](#kullanıcı-silme)
@@ -745,6 +746,13 @@ crontab -e
 
 Kayıt edip çıktıktan sonra artık job 5 dakikada bir log sıkıştırma dosyası oluşturur ve üzerine yazar.
 
+#### Cron Job Log Monitor
+
+Cron job kurduktan sonra anlık monitör edebilirsiniz;
+
+```shell
+tail -F CRON /var/log/syslog
+```
 
 ### Kullanıcı İşlemleri
 
