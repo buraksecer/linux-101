@@ -52,7 +52,7 @@
 * [Process İzleme](#process-i̇zleme)
 * [Foreground - Background Process](#foreground---background-process)
 * [Cron Jobs](#cron-jobs)
-  * [Cron Job Log Monitor]()
+  * [Cron Job Log Monitor](#cron-job-log-monitor)
 * [Kullanıcı İşlemleri](#kullanıcı-i̇şlemleri)
   * [Kullanıcı Ekleme](#kullanıcı-ekleme)
   * [Kullanıcı Silme](#kullanıcı-silme)
