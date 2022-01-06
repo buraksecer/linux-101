@@ -79,11 +79,11 @@
 
 ------------
 
-### Linux Nedir?
+# Linux Nedir?
 
 Unix’e fikirsel ve teknik anlamda atıfta bulunarak geliştirilmiş açık kaynak kodlu, özgür ve ücretsiz (destek hariç) bir işletim sistemi çekirdeğidir. Çekirdeğin kaynak kodları GNU (Genel Kamu Lisansı) çerçevesinde özgürce dağıtılabilir, değiştirilebilir ve kullanılabilir. Linux ismi ilk olarak Linus Torvalds tarafından yazılan ve 5 Ekim 1991 Linux 0.02 etiketiyle duyurusu yapılan, Linux çekirdeğinden gelmektedir. Linux’un Unix ile herhangi bir kod ortaklığı bulunmamaktadır yani Linux’un kodları sıfırdan başlanılarak yazılmıştır.
 
-### Distro Nedir?
+# Distro Nedir?
 
 Linux'un dağıtımlarına verilen isimdir. Bunlardan en yaygın olarak bilinenleri;
 
@@ -93,38 +93,38 @@ Linux'un dağıtımlarına verilen isimdir. Bunlardan en yaygın olarak bilinenl
 - OpenSUSE
 - Fedora
 
-### Distrolar Arasındaki Farklar
+# Distrolar Arasındaki Farklar
 
 Dağıtımlar ihtiyaçlara göre geliştirilmişlerdir. Örneğin mint dağıtımı genelde görselliğe önem verir ve windowsdan gelen kullanıcılara cazip gelir. Ayrıca paket yönetim şekilleri ve dosya yapıları gibi farklılıklarda mevcuttur.
 
-###  Bazı Distroların Dosya Yapıları
+#  Bazı Distroların Dosya Yapıları
 
 - [Linux Mint](https://community.linuxmint.com/tutorial/view/355 "Linux Mint")
 - [Debian](https://www.debian.org/releases/buster/amd64/apcs02.en.html "Debian")
 - [Ubuntu](https://help.ubuntu.com/community/LinuxFilesystemTreeOverview "Ubuntu")
 - [Fedora](https://fedoraproject.org/wiki/Docs/Drafts/DirectoryStructure "Fedora")
 
-### [Paket](https://tr.wikipedia.org/wiki/Paket_y%C3%B6netim_sistemi "Paket") Yönetim Sistemi
+# [Paket](https://tr.wikipedia.org/wiki/Paket_y%C3%B6netim_sistemi "Paket") Yönetim Sistemi
 
 Paket yönetim sistemi ya da paket yöneticisi; yazılım paketlerinin ve kütüphanelerinin kurulum, güncelleme, konfigürasyon, kaldırılması işlemlerinin tutarlı ve stabil bir şekilde yürütülmesini sağlayan olan sistemlerdir. Tipik olarak paket ve kütüphanelerin hangi versiyonunun kurulduğunu ve birbirlerine olan bağımlılıklarını da hesaba katarlar. Modern paket yöneticilerinin birçoğu merkezi bir kaynaktan yazılım ve kütüphanelerin indirilip yüklenmesi işlevine sahiptirler.
 
 Paket yönetim sistemleri, bir işletim sistemine kurulan yazılımların yönetimi için kullanılabildiği gibi yazılım geliştirme sırasında kullanılan yazılım kütüphanelerinin kurulması ve bağımlılık yönetimi (dependency management) için hazırlananları da mevcuttur.
 
-### Bazı Distroların Paket Yöneticileri
+# Bazı Distroların Paket Yöneticileri
 
 - Linux Mint, Debian ve Ubuntu: [dpkg](https://tr.wikipedia.org/wiki/Dpkg "dpkg")
 - OpenSUSE: ZYpp, YaST ve RPM
 - Fedora: [RPM Paket Yöneticisi](https://tr.wikipedia.org/wiki/RPM_Paket_Y%C3%B6neticisi "RPM Paket Yöneticisi")
 
-### Debian Nedir?
+# Debian Nedir?
 
 [Debian](https://wmaraci.com/nedir/debian "Debian") Linux, birçok Linux dağıtımının kaynak olarak kullandığı arayüzden ziyade daha çok komutların kullanıldığı ve orta seviyedeki her Linux kullanıcısının kullanabileceği bir Linux dağıtımıdır. 1993 yılından bu yana geçen süreç içerisinde sürekli olarak geliştiriliyor olması ve donanım konusunda kullanıcılara sunduğu geniş desteği sayesinde Debian Linux deneyiminin tam anlamıyla yaşanabileceği en iyi işletim sistemlerinden biridir.
 
-### CentOS Nedir?
+# CentOS Nedir?
 
 CentOS Red Hat firmasının dağıtımı olan Red Hat Enterprise Linux (RHEL) kaynak kodları üzerine kurulu ve bu dağıtım ile uyumlu bir linux dağıtımıdır. Bağımsız bir grup tarafından geliştirilen işletim sisteminin isminin açılımı The Community ENTerprise Operating System biçimindedir. Ocak 7, 2014 tarihli bir bildiri ile CentOS geliştirici lideri Karanbir Singh, CentOS'un RedHat ekibine dahil olduğunu bildirmiştir.
 
-### Red Hat Nedir?
+# Red Hat Nedir?
 
 Red Hat, açık kaynaklı ve Linux tabanlı profesyonel yazılım şirketidir. Şirket, 1993′te Bob Young ve Marc Ewing tarafından kurulmuştur.
 
@@ -132,7 +132,7 @@ Red Hat tarafından resmi olarak desteklense de, Fedora özgür yazılım geliş
 
 Red Hat Linux ve dolayısıyla Fedora'yı özel yapan şey kararlı ve bilinen paketlerin, sağlam bilgi ile bir araya getirilmesidir. Paketler güncel değildir; güvenlik güncellemeleri dışında, yeni bir beta versiyon çıktığında paket versiyonları dondurulmaktadır. Sonuç, iyi test edilmiş, nispeten kararlı bir Linux dağıtımıdır. Ayrıca RPM paket yöneticisi, Red Hat'ın Linux'a katkılarından birisidir. Bugün Mandriva, Suse gibi popüler birçok dağıtımın kullandığı RPM paket kurulumu konusunda önemli adımlar atılmasını sağlamıştır.
 
-### [Shell](https://siberoloji.github.io/linux-shell-nedir/ "Shell") Nedir?
+# [Shell](https://siberoloji.github.io/linux-shell-nedir/ "Shell") Nedir?
 
 Linux işletim sisteminin yapısında, bilgisayarın donanımı ile iletişim kuran yazılıma Kernel (Kabuk) adı verilmektedir. Kullanıcı, doğrudan donanım ile iletişim kuramaz. Kernel e bir komut göndermek ve işlemlerin yapılmasını sağlamak gerekmektedir. Kullanıcı ile Kernel arasında haberleşme, Shell ismi verilen aracı program sayesinde yapılır.
 
@@ -144,19 +144,19 @@ Temel olarak Shell aşağıdaki işlemleri sırasıyla yapan bir döngüye sahip
 4. Sonucu ekrana veya istenen yere yazdır.
 5. Birinci adıma geri dön.
 
-### Terminal Nedir?
+# Terminal Nedir?
 
 Terminal, metin tabanlı komutları yazabileceğiniz ve uygulayabileceğiniz bir arayüzdür. Bu arayüz sayesinde komutları çalıştırırız.
 
-### SSH Servisi
+# SSH Servisi
 
 İki sistem arasında ister yerel ağdaki bağlantıların isterse uzak bağlantıların güvenli bir şekilde yapılabilmesini sağlayan bir protokoldür. Bağlantı yapılan iki sistemin arasındaki t üm ağ trafiği şifrelenerek verilerin güvenliği sağlanır.
 
 Bağlantı yapılırken kimlik doğrulaması yapılmaktadır. Bu kimlik doğrulamasından sonra istemci ile sunucu arasında bir şifreleme oluşur ve bu şifreleme ile haberleşirler. Ssh için istemci ve sunucuda ssh servisinin yüklü olması gereklidir.[Linux komut satırı - Kemal Demirez]
 
-## KOMUTLAR
+# KOMUTLAR
 
-### history
+## history
 
 Terminalde çalıştırdığımız her komut aslında hemen kaybolmazlar. Bu komutlar bellekte tutulur ve History komutu ile en son verdiğiniz komutları listeleyebilirsiniz.
 
@@ -165,7 +165,7 @@ Verdiğiniz son 10 komutu listeler:
 ```shell
 history 10
 ```
-### man
+## man
 
 Terminalde bir komutun detaylarına erişmek için bu komut kullanılır.
 
@@ -173,7 +173,7 @@ Terminalde bir komutun detaylarına erişmek için bu komut kullanılır.
 man exit
 ```
 
-### shutdown
+## shutdown
 
 Hemen kapat:
 ```shell
@@ -204,7 +204,7 @@ Saat 17:30 da kapat:
 shutdown -h 17:30
 ```
 
-### dig
+## dig
 
 Açılımı Domain Information Gropher demektir. Yani Alan Bilgisi Toplayıcısı diyebiliriz.
 
@@ -220,7 +220,7 @@ dig buraksecer.com // Answer Section altında A kaydını görebiliriz.
 dig buraksecer.com -t NS //name server listeler
 ```
 
-###  curl
+##  curl
 
 client url kısaltınca c-url -> curl olmuş :tw-1f37a: 
 
@@ -264,7 +264,7 @@ curl -u root:password -T dosya.tar.gz ftp://sunucu
 ```
 Daha fazlası için man curl yazıp inceleyebilirsiniz.
 
-### lsb_release
+## lsb_release
 
 Kullandığınız linux dağıtımını öğrenmek için;
 
@@ -272,7 +272,7 @@ Kullandığınız linux dağıtımını öğrenmek için;
 lsb_release -a
 ```
 
-### cal
+## cal
 
 Eğer bu komutu çalıştırırsanız ekrana bir takvim gelir.
 
@@ -286,7 +286,7 @@ Belirli bir tarihin takvimini görmek için;
 cal 1 1992 //1. ayı gösterir
 ```
 
-### date
+## date
 
 Sistemin o an tarihini veren komuttur.
 
@@ -294,7 +294,7 @@ Sistemin o an tarihini veren komuttur.
 date
 ```
 
-### uname
+## uname
 
 Kullanılan karnel versiyonunu öğrenmek için kullanılan komuttur.
 
@@ -302,7 +302,7 @@ Kullanılan karnel versiyonunu öğrenmek için kullanılan komuttur.
 uname
 ```
 
-### w-who-who am i
+## w-who-who am i
 
 - w: Hangi kullanıcının hangi komutu çalıştırdığı bilgisi.
 - who: O an hangi kimlikle çalıştığınız.
@@ -316,7 +316,7 @@ who
 who am i
 ```
 
-### uptime
+## uptime
 
 Sistemin ne kadar zamandır açık kaldığını görmek istersek kullanıyoruz.
 
@@ -324,7 +324,7 @@ Sistemin ne kadar zamandır açık kaldığını görmek istersek kullanıyoruz.
 uptime
 ```
 
-### hostname
+## hostname
 
 Linux'da kullanılan host adını verir.
 
@@ -332,9 +332,9 @@ Linux'da kullanılan host adını verir.
 hostname
 ```
 
-## Dosya / Klasör İzinleri
+# Dosya / Klasör İzinleri
 
-### Yetkiler
+## Yetkiler
 
 Terminali açıp bulunduğunuz dizinde **ls -l** komutunu çalıştırır iseniz aşağıdaki çıktıyı alacaksınız.
 
@@ -353,7 +353,7 @@ Hemen alt satırda **total 32** yazıyor. Bu iç içe geçmiş dosyalar dahil b�
 - xr -> 2. kısım dosya sahibi ile aynı grupta bulunan kullanıcıların yetkileri.
 - x -> 3. kısım ise genel kullanıcı yetkilerini belirtir.
 
-### Erişim Yetkilerinin Değiştirilmesi
+## Erişim Yetkilerinin Değiştirilmesi
 
 Erişim yetkileri önemli bir konu olduğu için bu manipülasyon işlemini sadece root kullanıcısı yapabilir. Erişim yetkilerini değiştirirken **chmod** komutu kullanılır.
 
@@ -373,7 +373,7 @@ chmod <ugoa><+=-><rwxst><dosya/dizin>
 - s: Suid biti.
 - t: Sticky bit.
 
-### Suid Biti
+## Suid Biti
 
 Bir dosya düşünün, bir kullanıcının yazma yetkisi yok. Fakat o kullanıcının geçici olarak yazması lazım. Suid biti ayarlanan kullanıcılar bu geçici yetkiye sahip olurlar.
 
@@ -391,7 +391,7 @@ Sistemdeki suit biti ayarlanmış dosya/dizin bulma komutu:
 find / -perm -4000
 ```
 
-### Umask Komutu
+## Umask Komutu
 
 Yeni oluşturulan dizin/dosyalar için varsayılan olarak verilecek izinleri ayarlamamıza yarar.
 
@@ -399,7 +399,7 @@ Yeni oluşturulan dizin/dosyalar için varsayılan olarak verilecek izinleri aya
 umask rwxr-r--r--
 ```
 
-### Chattr Komutu
+## Chattr Komutu
 
 Bir dosya düşünün, config dosyası. Bu dosyanın içinde kesinlikle değişiklil yaplmasın diyorsanız bu komut tam size göre.
 
@@ -420,7 +420,7 @@ lsattr -R <dizin>
 ```
 
 
-### Bir Dosyayı Okuma
+# Bir Dosyayı Okuma
 
 Her hangi bir dosyanın içini okumak istiyorsak bunun farklı komutları vardır. Okumak istediğiniz dizinde olmalısınız ya da dizini komuttan sonra belirtmelisiniz.
 
@@ -448,7 +448,7 @@ Bir metin dosyanız var ve çok satırlı. Bu komut metin dosyanızı kolayca ok
 more folder.txt
 ```
 
-### Dosya Monitoring
+# Dosya Monitoring
 
 Genellikle log dosyalarını izlemek için kullanılan bir komuttur fakat txt dosyalarını izlemek içinde kullanılabilir.
 
@@ -459,7 +459,7 @@ tail -f  /var/log/syslog //log izlemek için kullanılır
 tail -F text.txt //txt dosyasının değişikliklerini anlık görüntüler ve bilgi verir.
 ```
 
-### Vim Editörü
+# Vim Editörü
 
 Dosyalarınızı açıp düzenleyebileceğiniz bir text editörüdür. Şimdi vim komutlarına yakından bakalım.
 
@@ -534,7 +534,7 @@ Bütün dosyada değişiklik yapmak için: (gc tek tek onay ister sadece g onays
 :%s/arama sözcüğü/değiştirme sözcüğü/gc
 ```
 
-### Aradığımız Dosyayı Bulma
+# Aradığımız Dosyayı Bulma
 
 Bir dizin içerisinde veya bütün işletim sistemi içerisinde isme göre dosya araması yapabiliriz. Ayrıca sadece txt uzantılı dosyalarıda arayabiliriz.
 
@@ -556,11 +556,11 @@ Veya içinde test geçen dosyaları arayabiliriz bir nevi like gibi.
 find ./Desktop -type f -name "*test*"
 ```
 
-### Dosya İşlemleri
+# Dosya İşlemleri
 
 Dizin işlemlerinde **-r** kullanılmalıdır.
 
-#### Dosya Oluşturma
+## Dosya Oluşturma
 
 ```shell
 mkdir dosya1
@@ -584,7 +584,7 @@ Klasör oluşturma;
 touch text.txt
 ```
 
-#### Dosya Silme
+## Dosya Silme
 
 -r ile kullanılırsa dizin silebiliriz.
 
@@ -604,7 +604,7 @@ ya da
 rmdir dosya
 ```
 
-#### Dosya Kopyalama
+## Dosya Kopyalama
 
 ```shell
 cp -r kopyalanan_dosya kopyalancak_konum
@@ -623,7 +623,7 @@ scp kopyalanan_dosya kopyalancak_konum
 scp myfile.txt remoteuser@remoteserver:/remote/folder/
 ```
 
-#### Dosya Taşıma
+## Dosya Taşıma
 
 Dosyayı olduğu gibi taşımak istiyorsanız;
 
@@ -631,7 +631,7 @@ Dosyayı olduğu gibi taşımak istiyorsanız;
 mv dosya1 tasinacagi_konum
 ```
 
-#### Dosya İsim Değiştirme
+## Dosya İsim Değiştirme
 
 mv komutu ile yapılabiliyor. İlk önce değiştirmek istediğiniz dosya ya da klasör yazılıyor sonra yeni ismi.
 
@@ -639,7 +639,7 @@ mv komutu ile yapılabiliyor. İlk önce değiştirmek istediğiniz dosya ya da 
 mv dosya1 yeni_isim
 ```
 
-### Dosya İçinde Kelime Arama
+# Dosya İçinde Kelime Arama
 
 Bir dosyanız var 1000 satırlık ve içinde şu kelime geçiyor mu bakmak istiyorsunuz.
 
@@ -671,7 +671,7 @@ Ya da bir dosyalar dizininiz var acaba diyorsunuz şu error nerde hangi dosyada 
 grep -l error ./*
 ```
 
-### Create a Environment Variable
+# Ortam Değişkenleri
 
 İşletim sisteminde bazı sabit değerler vardır. Bütün sistem kullanıcılar veya bazıları bu sabitleri istedikleri zaman okuyup kullanırlar. Şimdi bizde bu değişkenleri nasıl tanımlarız ve bu değişkenlerin listesini nasıl okuruz buna bakacağız.
 
@@ -691,7 +691,7 @@ Komutunu çalıştırıp, tanımladığımız ortam değişkeni listede var mı 
 
 Eğer linux restart olur ise bu değişken ne yazık ki kaybolur. Bunu kalıcı hale getirmek için **/etc/bashrc** dosyasının içine bu **export** komutunu eklemeniz gerekiyor.
 
-### Process İzleme
+# Process İzleme
 
 İşletim sisteminde en önemli konulardan biri tabii ki process. Bir çok şekilde farklı yöntemler ile terminalden izleme yapabiliyoruz.
 
@@ -741,7 +741,7 @@ pstree
 [![pstree](https://i.ibb.co/ZcXg23n/pstree.png "pstree")](https://i.ibb.co/ZcXg23n/pstree.png "pstree")
 
 
-### Foreground - Background Process
+# Foreground - Background Process
 
 [Process izlemeyi](https://github.com/buraksecer/linux-101#process-i%CC%87zleme "Process izlemeyi") daha önce işlemiştik. Şimdi bu process tiplerine ve nasıl bir process oluşturabiliriz bunlara bakacağız.
 
@@ -787,7 +787,7 @@ bg 1
 
 yaparak process'i background process yapıyoruz.
 
-### Cron Jobs
+# Cron Jobs
 
 Belli bir aralık ile çalışan iş parçacıklarına cron job diyoruz. Bir cron çalışma zamanı nasıl anlaşılır?
 
@@ -827,7 +827,7 @@ crontab -e
 
 Kayıt edip çıktıktan sonra artık job 5 dakikada bir log sıkıştırma dosyası oluşturur ve üzerine yazar.
 
-#### Cron Job Log Monitor
+## Cron Job Log Monitor
 
 Cron job kurduktan sonra anlık monitör edebilirsiniz;
 
@@ -835,40 +835,40 @@ Cron job kurduktan sonra anlık monitör edebilirsiniz;
 tail -F CRON /var/log/syslog
 ```
 
-### Kullanıcı İşlemleri
+# Kullanıcı İşlemleri
 
-####  Kullanıcı Ekleme
+##  Kullanıcı Ekleme
 
 ```shell
 adduser burak
 ```
 Bu komutu verdikten sonra sizden bir şifre isteyecek. Şifre girdikten sonra artık bir kullanıcı oluşturdunuz hayırlı olsun. /home klasörünün altında kullanıcı adı ile bir klasör göreceksiniz.
 
-#### Kullanıcı Silme
+## Kullanıcı Silme
 
 ```shell
 deluser --remove-home burak
 ```
 
-#### Kullanıcı Bilgilerini Listeleme
+## Kullanıcı Bilgilerini Listeleme
 
 ```shell
 chage -l burak
 ```
 
-#### Kullanıcı Bilgilerini Güncelleme
+## Kullanıcı Bilgilerini Güncelleme
 
 ```shell
 chfn burak
 ```
 
-#### Kullanıcı Parola Değiştirme
+## Kullanıcı Parola Değiştirme
 
 ```shell
 passwd burak
 ```
 
-### Kullanıcı Değiştirme Ve Başka Kullanıcı Adına İşlem Yapma
+# Kullanıcı Değiştirme Ve Başka Kullanıcı Adına İşlem Yapma
 
 Şimdi bu yukarıdaki oluşturduğumuz kullanıcıya geçiş yapalım ve onun kabuğunda çalışalım.
 
@@ -883,7 +883,7 @@ Peki bir diğer komutta başka kullanıcıya geçiş yapmaktır fakat sadece kom
 su burak
 ```
 
-### Disk Durumunu İnceleme
+# Disk Durumunu İnceleme
 
 ([Kaynak](https://www.hostinger.web.tr/rehberler/disk-kullanimi-nedir/ "Kaynak"))
 
@@ -909,13 +909,13 @@ su burak
 - df --help – Kullanabileceğiniz diğer yararlı komutları gösterecek ve onlarla ilgili daha fazla bilgi sağlayacaktır.
 
 
-### Bilgisayarın Ip Adreslerini Listeleme
+# Bilgisayarın Ip Adreslerini Listeleme
 
 ```shell
 curl ifconfig.me
 ```
 
-### Bir Domaini Pingleme
+# Bir Domaini Pingleme
 
 Bir web sitesine 1 paket gönderip cevap alabiliyor muyuz bakmaya pingleme denir.
 
@@ -933,7 +933,7 @@ ping -c 3 google.com
 
 Derseniz 3 adet ping atacak ve sonlanacak fakat hala bir foreground process'dir.
 
-### Bir Domainin Dns Kayıtlarını Listeleme
+# Bir Domainin Dns Kayıtlarını Listeleme
 
 Local linux dns ayarları ve listesi için;
 
@@ -947,7 +947,7 @@ Bir domain ayrıntıları için;
 nslookup -type=mx google.com
 ```
 
-### Package Manager İle Bir Paket Yükleme
+# Package Manager İle Bir Paket Yükleme
 
 Yerel sisteminizin yüklü paketlerinin en son sürüm bilgilerini güncellemek için;
 
@@ -969,7 +969,7 @@ Yükleme bittikten sonra bir kontrol şart:
 node –version
 ```
 
-### Bir Uzak Sunucuya SSH İle Uzaktan Bağlanma
+# Bir Uzak Sunucuya SSH İle Uzaktan Bağlanma
 
 SSH, şifreli bir şekilde iki ağ arasında iletişimi sağlayan bir tüneldir. Bağlantı yapılırken bilgiler karşı tarafa şifreli bir şekilde gönderilir. Önemli nokta ssh yapılabilmesi için karşı tarafta ssh servisinin çalışıyor olması gerekmektedir.
 
@@ -993,15 +993,15 @@ ssh kullanici@ipadresi
 
 bu komutan sonra sizden şifre isteyecek ve laps diye bağlantı açılacak. Artık uzak sunucunuzun linuxuna bağlandınız hayırlı olsun.
 
-### Linux Servisler
+# Linux Servisler
 
-#### systemd
+## systemd
 
 Systemd servislerin abisidir. Nerde bir servis çalışır ya da durur ise orada systemd vardır. Genelde linux dağıtımları systemd kullanır. İşletim sistemi her başladığında servisleri çalıştıran, logları toplayan abimizdir.
 
 `Linux’ta çalıştırdığımız web ve uygulama sunucuları, SSH, DNS, telnet, vb servisler systemd veya benzeri (örneğin upstart) bir init system tarafından yönetilirler. Bu sistemlere init system denmesinin sebebi, Linux'un bu sistemleri açılış sırasında (boot) diğer process'leri başlatan ve PID (Process ID) 1 ile ifade edilen init process'i olarak kullanmasıdır([kaynak](gokhansengun)).`
 
-#### systemctl
+## systemctl
 
 systemd yönetimini sağlayan komuttur. Gelin bazı komutları inceleyelim.
 
