@@ -32,6 +32,13 @@
   * [shutdown](#shutdown)
   * [dig](#dig)
   * [curl](#curl)
+  * [lsb_release](#lsb_release)
+  * [cal](#cal)
+  * [date](#date)
+  * [uname](#uname)
+  * [w - who - who am i](#w-who-who-am-i)
+  * [uptime](#uptime)
+  * [hostname](#hostname)
 * [Dosya/Klasör İzinleri](#dosya--klasör-i̇zinleri)
   * [Yetkiler](#yetkiler)
   * [Erişim Yetkilerinin Değiştirilmesi](#erişim-yetkilerinin-değiştirilmesi)
@@ -251,6 +258,12 @@ Dosya indirme işlemi,
 curl -u root:password -O ftp://sunucu/dosya.tar.gz
 ```
 
+Dosya yükleme işlemi,
+```shell
+curl -u root:password -T dosya.tar.gz ftp://sunucu
+```
+Daha fazlası için man curl yazıp inceleyebilirsiniz.
+
 ### lsb_release
 
 Kullandığınız linux dağıtımını öğrenmek için;
@@ -318,13 +331,6 @@ Linux'da kullanılan host adını verir.
 ```shell
 hostname
 ```
-
-
-Dosya yükleme işlemi,
-```shell
-curl -u root:password -T dosya.tar.gz ftp://sunucu
-```
-Daha fazlası için man curl yazıp inceleyebilirsiniz.
 
 ## Dosya / Klasör İzinleri
 
