@@ -56,6 +56,7 @@
   * [Dosya Taşıma](#dosya-taşıma)
   * [Dosya İsim Değiştirme](#dosya-i̇sim-değiştirme)
 * [Dosya İçinde Kelime Arama](#dosya-i̇çinde-kelime-arama)
+* [Ortam Değişkenleri](#ortam-değişkenleri)
 * [Process İzleme](#process-i̇zleme)
 * [Foreground - Background Process](#foreground---background-process)
 * [Cron Jobs](#cron-jobs)
