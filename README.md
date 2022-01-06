@@ -251,6 +251,75 @@ Dosya indirme işlemi,
 curl -u root:password -O ftp://sunucu/dosya.tar.gz
 ```
 
+### lsb_release
+
+Kullandığınız linux dağıtımını öğrenmek için;
+
+```shell
+lsb_release -a
+```
+
+### cal
+
+Eğer bu komutu çalıştırırsanız ekrana bir takvim gelir.
+
+```shell
+cal
+```
+
+Belirli bir tarihin takvimini görmek için;
+
+```shell
+cal 1 1992 //1. ayı gösterir
+```
+
+### date
+
+Sistemin o an tarihini veren komuttur.
+
+```shell
+date
+```
+
+### uname
+
+Kullanılan karnel versiyonunu öğrenmek için kullanılan komuttur.
+
+```shell
+uname
+```
+
+### w-who-who am i
+
+- w: Hangi kullanıcının hangi komutu çalıştırdığı bilgisi.
+- who: O an hangi kimlikle çalıştığınız.
+- who am i: who'dan farklı daha detaylı bir bilgi sağlar.
+
+```shell
+wr
+
+who
+
+who am i
+```
+
+### uptime
+
+Sistemin ne kadar zamandır açık kaldığını görmek istersek kullanıyoruz.
+
+```shell
+uptime
+```
+
+### hostname
+
+Linux'da kullanılan host adını verir.
+
+```shell
+hostname
+```
+
+
 Dosya yükleme işlemi,
 ```shell
 curl -u root:password -T dosya.tar.gz ftp://sunucu
@@ -365,7 +434,13 @@ ya da
 tail test.txt
 ```
 
-şekillerinde kullanıl sağlayabiliriz.
+şekillerinde kullanıl sağlayabiliriz ayrıca;
+
+Bir metin dosyanız var ve çok satırlı. Bu komut metin dosyanızı kolayca okumanızı sağlar ve eğer **enter** tuşuna basarsanız satır satır ilerler aşağı doğru. **Space** basılırsa ise diğer sayfaya geçer, aslında bir sayfalama işlemi var diyebiliriz. **b** tuşuna basarsanız bir önceki sayfaya döner.
+
+```shell
+more folder.txt
+```
 
 ### Dosya Monitoring
 
