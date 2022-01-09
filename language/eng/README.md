@@ -99,4 +99,13 @@ The distros has developed by needs, example mint distro usually focus ui and tem
 
 # [Package](https://tr.wikipedia.org/wiki/Paket_y%C3%B6netim_sistemi "Package") Management System
 
+Package management system or package admin; 
+This is a system who software packages and library setup, update, 
+configuration and delete.They typically also take into account which version of 
+packages and libraries are installed and their dependencies on each other.
+All modern package admins can download and upload
+software and library  from the central source.
+It can be used for the management of software installed on an operating system,
+as well as for the installation of software libraries used during software 
+development and for dependency management.
 

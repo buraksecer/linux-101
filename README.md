@@ -11,7 +11,6 @@
 | ------------ | ------------ | ------------ | 
 | Counter  | [Tıklaa](https://github.com/buraksecer/linux-101/tree/master/shell-scripts/tr/counter "Tıklaa")  | [Click Me!](https://github.com/buraksecer/linux-101/tree/master/shell-scripts/eng/counter "Click Me!") |
 
-
 # Linux 101
 
 * [Linux Nedir?](#linux-nedir)
@@ -420,7 +419,6 @@ Sistemde korumalı dosyalar neler merak ediyorsanız?
 lsattr -R <dizin>
 ```
 
-
 # Bir Dosyayı Okuma
 
 Her hangi bir dosyanın içini okumak istiyorsak bunun farklı komutları vardır. Okumak istediğiniz dizinde olmalısınız ya da dizini komuttan sonra belirtmelisiniz.
@@ -741,7 +739,6 @@ pstree
 
 [![pstree](https://i.ibb.co/ZcXg23n/pstree.png "pstree")](https://i.ibb.co/ZcXg23n/pstree.png "pstree")
 
-
 # Foreground - Background Process
 
 [Process izlemeyi](https://github.com/buraksecer/linux-101#process-i%CC%87zleme "Process izlemeyi") daha önce işlemiştik. Şimdi bu process tiplerine ve nasıl bir process oluşturabiliriz bunlara bakacağız.
@@ -909,7 +906,6 @@ su burak
 - du -h --time /home/user/Desktop/ – Bu bize, görüntülenen dosya ve klasörlerin son değiştirilme tarihini baz alarak bilgi verecektir.
 - df --help – Kullanabileceğiniz diğer yararlı komutları gösterecek ve onlarla ilgili daha fazla bilgi sağlayacaktır.
 
-
 # Bilgisayarın Ip Adreslerini Listeleme
 
 ```shell
@@ -1031,3 +1027,7 @@ sudo systemctl disable/enable apache2 //apache2 servisini deaktif/aktif etme.
 ```shell
 sudo journalctl -u apache2.service //Apache2 servisinin loglarını döker.
 ```
+
+
+
+
