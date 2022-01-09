@@ -7,9 +7,10 @@
 
 # Examples (Örnekler)
 
-|Name   | Link  :tr: | Link :england:|
-| ------------ | ------------ | ------------ | 
-| Counter  | [Tıklaa](https://github.com/buraksecer/linux-101/tree/master/shell-scripts/tr/counter "Tıklaa")  | [Click Me!](https://github.com/buraksecer/linux-101/tree/master/shell-scripts/eng/counter "Click Me!") |
+| Name    | Link  :tr: | Link :england:|
+|---------| ------------ | ------------ | 
+| Counter | [Tıklaa](https://github.com/buraksecer/linux-101/tree/master/shell-scripts/tr/counter "Tıklaa")  | [Click Me!](https://github.com/buraksecer/linux-101/tree/master/shell-scripts/eng/counter "Click Me!") |
+| Copy    | [Tıklaa](https://github.com/buraksecer/linux-101/tree/master/shell-scripts/tr/copy "Tıklaa")  | [Click Me!](https://github.com/buraksecer/linux-101/tree/master/shell-scripts/eng/copy "Click Me!") |
 
 # Linux 101 (We are translating, please wait... or maybe help us <3 )
 
