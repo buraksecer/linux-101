@@ -78,6 +78,7 @@
 * [Linux Servisler](#linux-servisler)
   * [systemd](#systemd) 
   * [systemctl](#systemctl)
+* [Sıkıştırma İşlemleri](#sıkıştırma-i̇şlemleri) 
 
 ------------
 

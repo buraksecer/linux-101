@@ -37,6 +37,7 @@
   * [w - who - who am i](#w-who-who-am-i)
   * [uptime](#uptime)
   * [hostname](#hostname)
+  * [free](#free)
 * [File/Folder Permissions](#)
   * [Permissions](#)
   * [Changing Access Authorizations](#)
@@ -70,6 +71,10 @@
 * [DNS List](#)
 * [Let's Upload a Package with Package Manager](#)
 * [Let's Connect Remote Server with SSH](#)
+* [Linux Services](#)
+  * [systemd](#)
+  * [systemctl](#)
+* [Compression Operations](#)
 
 ------------
 
