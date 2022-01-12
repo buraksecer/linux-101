@@ -39,6 +39,7 @@
   * [w - who - who am i](#w-who-who-am-i)
   * [uptime](#uptime)
   * [hostname](#hostname)
+  * [free](#free)
 * [Dosya/Klasör İzinleri](#dosya--klasör-i̇zinleri)
   * [Yetkiler](#yetkiler)
   * [Erişim Yetkilerinin Değiştirilmesi](#erişim-yetkilerinin-değiştirilmesi)
@@ -332,6 +333,35 @@ Linux'da kullanılan host adını verir.
 ```shell
 hostname
 ```
+
+## free
+
+Linux sistemimizde o an bellek durumunu öğrenmemize yardım eden komuttur.
+
+```shell
+free
+```
+
+```shell
+free -b
+```
+
+```shell
+free -k
+```
+
+```shell
+free -m
+```
+
+```shell
+free -g
+```
+[![](https://i.ibb.co/rQHkkZC/lnx2.png)](https://i.ibb.co/rQHkkZC/lnx2.png)
+- b: byte
+- k: kilo - byte
+- m: mega - byte
+- g: giga - byte
 
 # Dosya / Klasör İzinleri
 
@@ -1029,6 +1059,77 @@ sudo systemctl disable/enable apache2 //apache2 servisini deaktif/aktif etme.
 sudo journalctl -u apache2.service //Apache2 servisinin loglarını döker.
 ```
 
+# Sıkıştırma İşlemleri
 
+Bir çok sıkıştırma komutu vardır. Bunlardan bazıları;
 
+- zip
+- gzip
+- tar
 
+## zip
+
+Zip oluşturma,
+
+```shell
+zip -r test.zip ziplenecekhedef
+```
+
+Şifreli zip oluşturma,
+
+```shell
+zip -r -P 1234 test.zip ziplenecekhedef
+```
+
+Zip açma,
+
+```shell
+unzip acilacakzipdosyasi.zip
+```
+
+Şifreli zip açma,
+
+```shell
+unzip -P şifre acilacakzipdosyasi.zip
+```
+
+## gzip
+
+gzip oluştururken sizden bir sıkıştırma kalitesi ister. 
+Bu kalite 1 en düşük ama hızlı, 9 yüksek ama yavaş sıkıştırır.
+
+Gzip oluşturma,
+
+```shell
+gzip -9 index.html
+```
+
+Burada dikkat edilmesi gereken, index.html.gz olarak değiştirir sıkıştırdığı direkt dosyanın
+kendisidir. Parametre olarak 9 verdik. En iyi sıkıştırma deneyimi için en yüksek değeri
+verdik.
+
+Gzip dizin sıkıştırma,
+
+```shell
+gzip -9 -r file
+```
+
+Gzip açma,
+
+```shell
+gunzip index.html.gz
+```
+
+## tar
+
+Tar oluşturma,
+
+```shell
+tar -cvf test.tar ziplenecekhedef
+```
+
+Tar açma,
+
+```shell
+tar -xvf test.tar
+```
