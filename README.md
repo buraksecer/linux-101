@@ -79,6 +79,9 @@
   * [systemd](#systemd) 
   * [systemctl](#systemctl)
 * [Sıkıştırma İşlemleri](#sıkıştırma-i̇şlemleri) 
+  * [zip](#zip)
+  * [gzip](#gzip)
+  * [tar](#tar) 
 
 ------------
 
