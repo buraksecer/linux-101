@@ -75,6 +75,9 @@
   * [systemd](#)
   * [systemctl](#)
 * [Compression Operations](#)
+  * [zip](#zip)
+  * [gzip](#gzip)
+  * [tar](#tar) 
 
 ------------
 
