@@ -19,8 +19,8 @@
 * [Differences Between Distros](#differences-between-distros)
 * [File Structures of Some Distros](#file-structures-of-some-distros)
 * [Package Management System](#package-management-system)
-* [Package Admins of Some Distros](#)
-* [What is Debian?](#)
+* [Package Admins of Some Distros](#package-admins-of-some-distros)
+* [What is Debian?](#what-is-debian)
 * [What is CentOs?](#)
 * [What is Red Hat?](#)
 * [What is Shell?](#)
@@ -118,3 +118,18 @@ It can be used for the management of software installed on an operating system,
 as well as for the installation of software libraries used during software 
 development and for dependency management.
 
+# Package Admins of Some Distros
+
+- Linux Mint, Debian ve Ubuntu: [dpkg](https://en.wikipedia.org/wiki/Dpkg "dpkg")
+- OpenSUSE: ZYpp, YaST ve RPM
+- Fedora: [RPM](https://en.wikipedia.org/wiki/RPM_Paket_Y%C3%B6neticisi "RPM")
+
+# What is Debian?
+
+[Debian](https://en.wikipedia.org/wiki/Debian "Debian") Linux,
+It is a Linux distribution that uses commands rather than the interface that many 
+Linux distributions use as a source, and can be used by every intermediate 
+Linux user.
+It is one of the best operating systems where the Debian Linux experience can be fully experienced, thanks to
+its continuous development since 1993 and the extensive support it offers to users 
+in hardware.
