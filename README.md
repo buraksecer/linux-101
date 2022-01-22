@@ -128,7 +128,12 @@ Paket yönetim sistemleri, bir işletim sistemine kurulan yazılımların yönet
 
 # CentOS Nedir?
 
-CentOS Red Hat firmasının dağıtımı olan Red Hat Enterprise Linux (RHEL) kaynak kodları üzerine kurulu ve bu dağıtım ile uyumlu bir linux dağıtımıdır. Bağımsız bir grup tarafından geliştirilen işletim sisteminin isminin açılımı The Community ENTerprise Operating System biçimindedir. Ocak 7, 2014 tarihli bir bildiri ile CentOS geliştirici lideri Karanbir Singh, CentOS'un RedHat ekibine dahil olduğunu bildirmiştir.
+CentOS Red Hat firmasının dağıtımı olan Red Hat Enterprise Linux (RHEL) 
+kaynak kodları üzerine kurulu ve bu dağıtım ile uyumlu bir linux dağıtımıdır.
+Bağımsız bir grup tarafından geliştirilen işletim sisteminin isminin açılımı 
+The Community ENTerprise Operating System biçimindedir. Ocak 7, 
+2014 tarihli bir bildiri ile CentOS geliştirici lideri Karanbir Singh,
+CentOS'un RedHat ekibine dahil olduğunu bildirmiştir.
 
 # Red Hat Nedir?
 

@@ -21,7 +21,7 @@
 * [Package Management System](#package-management-system)
 * [Package Admins of Some Distros](#package-admins-of-some-distros)
 * [What is Debian?](#what-is-debian)
-* [What is CentOs?](#)
+* [What is CentOs?](#what-is-centos)
 * [What is Red Hat?](#)
 * [What is Shell?](#)
 * [What is Terminal?](#)
@@ -133,3 +133,13 @@ Linux user.
 It is one of the best operating systems where the Debian Linux experience can be fully experienced, thanks to
 its continuous development since 1993 and the extensive support it offers to users 
 in hardware.
+
+# What is CentOS?
+
+CentOS,Red Hat Enterprise Linux (RHEL) is red hat company distro who
+linux distribution based on RHEL source codes and compatible with this distribution.
+The operating system developed by independent group, expansion of the name is
+The Community ENTerprise Operating System.
+CentOS development lead Karanbir Singh has reported to
+centOS join to red hat team in january 7,2014.
+
