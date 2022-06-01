@@ -143,3 +143,40 @@ The Community ENTerprise Operating System.
 CentOS development lead Karanbir Singh has reported to
 centOS join to red hat team in january 7,2014.
 
+# What is Ret Hat?
+Ret Hat is software company that a open source and linux base.
+The company was established by Bob Young ve Marc Ewing at 1993.
+Although it is officially supported, Fedora it continues to exist because support by free software developers and
+The same time, Linux, Linux  use for  test environment the Red Hat enterprise.
+What makes Red Hat Linux, and therefore Fedora, special is that Decisively and well-known packages are combined with sound information.
+Packages aren't current; except the security updates, when it comes out new a beta version, package versions are being filled.
+Result, well tested, stable linux distribution. Also RPM package administrator, it is one of the contributions of Red Hat to Linux.
+Today, many populer distro has ensured that important steps have been taken by like the used Mandriva, Suse the RPM package setup.
+
+# What is [Shell](https://siberoloji.github.io/linux-shell-nedir/ "Shell")?
+The software which contacts in the structure of the Linux operating system with computer hardware calls Kernel (shell). The user cannot contact with the hardware directly. The user must send a command to Kernel and make operations ensure. Communication between the user and Kernel can be done with an intermediary program called Shell. 
+Basically, Shell has a loop that consists of the process below: 
+
+1. Read the command from the command line or the file 
+2. Check the command 
+3. Work the command or another required program 
+4. Print result on the screen or desired location 
+5. Back to the first step
+
+# What is Terminal?
+
+Terminal is a interface that you can write and apply text based command.
+That interface through can run the command.
+
+# SSH Service
+
+This protocol that  each other remote connections safely way can. This protocol can work local network.
+All network traffic between the two connected systems is encrypted to ensure the security of the data Dec.
+When It is connection, it being doing identity control.
+After this authentication, Decipherment occurs between the client and the server, and they communicate with this encryption. For ssh, it is necessary that the ssh service is installed on the client and server.[Linux command line - Kemal Demirez]
+
+
+# COMMANDS
+
+## history
+
