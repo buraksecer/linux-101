@@ -180,3 +180,49 @@ After this authentication, Decipherment occurs between the client and the server
 
 ## history
 
+Every command we run in the terminal actually does not disappear immediately. These commands are stored in memory, and you can list the commands that you last issued using the History command.
+
+Lists the last 10 commands you issued:
+
+```shell
+history 10
+```
+
+## man
+
+This command is used to access the details of a command in the terminal.
+
+```shell
+man exit
+```
+
+## shutdown
+
+Now shut:
+```shell
+shutdown
+```
+
+Shut and restart:
+
+```shell
+shutdown -r
+```
+
+after 20 min shut:
+
+```shell
+shutdown +20
+```
+
+after 20 min restart:
+
+```shell
+shutdown -r 20
+```
+
+shut at 17:30:
+
+```shell
+shutdown -h 17:30
+```
