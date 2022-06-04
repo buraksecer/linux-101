@@ -226,3 +226,165 @@ shut at 17:30:
 ```shell
 shutdown -h 17:30
 ```
+
+
+## dig
+
+dig's meaning is  Domain Information Gropher. In other words, we can call it a Field Information Collector.
+
+we can view A records with the dig command.
+
+`The address (A) register redirects the hostname to an IP address. For example, server.domainame.com if you want the address to be redirected directly to your host computer (whether the ip address is 111.111.111.111), you must enter a record such as: domainame.com . Â111.111.111.111`
+
+```shell
+dig buraksecer.com // we can see under 'Answer Section' the A record.
+```
+
+```shell
+dig buraksecer.com -t NS //name server listeler
+```
+
+##  curl
+
+the client url is c-url -> curl.
+
+It is the command that allows us to communicate with sites. The most common use of the http protocol is also;
+
+curl supports the following protocols:
+
+- HTTP ve HTTPS
+- SFTP
+- SCP
+- IMAP ve IMAPS
+- POP3 ve POP3S
+- TELNET
+- SMB ve SMBS
+- GOPHER
+- LDAP ve LDAPS
+- SMTP ve SMTPS
+- FTP ve FTPS
+
+Let's have a get request;
+
+```shell
+curl https://www.buraksecer.com //returns the content of the site to you.
+```
+
+If you want to download my current cv command to the directory where you are running, please:
+
+```shell
+curl -o burak.pdf https://www.buraksecer.com/wp-content/uploads/2021/12/burak-secer-up.pdf
+```
+Now let's use an FTP protocol;
+Download file,
+
+```shell
+curl -u root:password -O ftp://sunucu/dosya.tar.gz
+```
+
+The process of uploading files,
+```shell
+curl -u root:password -T dosya.tar.gz ftp://sunucu
+```
+For more information, you can type and review man curl.
+
+## lsb_release
+
+To find out the linux distribution you are using;
+
+```shell
+lsb_release -a
+```
+
+## cal
+
+If you run this command, a calendar appears on the screen.
+
+```shell
+cal
+```
+
+To see the calendar for a specific date;
+
+```shell
+cal 1 1992 //1st month
+```
+
+## date
+
+It is the command that gives the current date of the system.
+
+```shell
+date
+```
+
+## uname
+
+This is the command used to find out the version of the shot used.
+
+```shell
+uname
+```
+
+## w-who-who am i
+
+- w: Information about which user is running which command.
+- who: The identity with which you are currently working.
+- who am i: provides more detailed information that is different from who.
+
+```shell
+wr
+
+who
+
+who am i
+```
+
+## uptime
+
+We use it if we want to see how long the system has been open.
+
+```shell
+uptime
+```
+
+## hostname
+
+Gives the name of the host used in Linux.
+
+```shell
+hostname
+```
+
+## free
+
+It is a command that helps us find out the current state of memory on our Linux system.
+
+```shell
+free
+```
+
+```shell
+free -b
+```
+
+```shell
+free -k
+```
+
+```shell
+free -m
+```
+
+```shell
+free -g
+```
+[![](https://i.ibb.co/rQHkkZC/lnx2.png)](https://i.ibb.co/rQHkkZC/lnx2.png)
+- b: byte
+- k: kilo - byte
+- m: mega - byte
+- g: giga - byte
+
+# File / Folder Permissions
+
+## Authorizations
