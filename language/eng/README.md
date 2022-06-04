@@ -38,8 +38,8 @@
   * [uptime](#uptime)
   * [hostname](#hostname)
   * [free](#free)
-* [File/Folder Permissions](#)
-  * [Permissions](#)
+* [File/Folder Permissions](#file--folder-permissions)
+  * [Permissions](#permissions)
   * [Changing Access Authorizations](#)
   * [Suid Bit](#)
   * [Umask Command](#)
@@ -387,4 +387,4 @@ free -g
 
 # File / Folder Permissions
 
-## Authorizations
+## Permissions
