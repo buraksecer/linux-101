@@ -40,8 +40,8 @@
   * [free](#free)
 * [File/Folder Permissions](#file--folder-permissions)
   * [Permissions](#permissions)
-  * [Changing Access Authorizations](#)
-  * [Suid Bit](#)
+  * [Changing Access Authorizations](#changing-access-authorizations)
+  * [Suid Bit](#suid-bit)
   * [Umask Command](#)
   * [Chattr Command](#)
 * [Reading a File](#)
@@ -388,3 +388,46 @@ free -g
 # File / Folder Permissions
 
 ## Permissions
+
+If you open the terminal and when you run the **ls -l** commands, you can see the following output;
+
+[![Terminal ls -l](https://i.ibb.co/jh8s5Fm/rwrw.png "Terminal ls -l")](https://i.ibb.co/jh8s5Fm/rwrw.png "Terminal ls -l")
+
+You can see the following the bottom line output:**total 32**. It's give the whole file-folder count and include nested file-folder. If you look at the fist line you can see permission for Desktop. Every letter has a meaning here.
+
+- d -> this is a array. But If 'd' instead of '-' this mean is file.
+- r -> read
+- w -> write
+- x -> run
+
+The our attention of permission, It's scattered by 3 main part. For example: **drwxr - xr - x **  , this is scattered 3 main part through tilda.
+
+
+- drwxr -> part 1: permission file/directory owner.
+- xr -> part 2: the user permissions that with file owner same group.
+- x -> part 3: general user permissions.
+
+
+## Changing Access Authorizations
+
+Since access permissions are an important issue, only the root user can perform this manipulation. When changing access permissions, the **chmod** command is used.
+
+```shell
+chmod <ugoa><+=-><rwxst><file/directory>
+```
+- u: File or directory owner, user.
+- g: The users who the same group with u.
+- o: Other users.
+- a: Everyone.
+- +: Permission Add.
+- -: Permission Remove.
+- =: Permission Sync.
+- r: Read
+- w: Write
+- x: Run
+- s: Suid bit.
+- t: Sticky bit.
+
+## Suid Bit
+
+

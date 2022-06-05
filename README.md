@@ -376,7 +376,7 @@ free -g
 
 ## Yetkiler
 
-Terminali açıp bulunduğunuz dizinde **ls -l** komutunu çalıştırır iseniz aşağıdaki çıktıyı alacaksınız.
+Terminali açıp bulunduğunuz dizinde **ls -l** komutunu çalıştırırsanız aşağıdaki çıktıyı alacaksınız.
 
 [![Terminal ls -l](https://i.ibb.co/jh8s5Fm/rwrw.png "Terminal ls -l")](https://i.ibb.co/jh8s5Fm/rwrw.png "Terminal ls -l")
 
