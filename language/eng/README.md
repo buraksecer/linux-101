@@ -42,11 +42,11 @@
   * [Permissions](#permissions)
   * [Changing Access Authorizations](#changing-access-authorizations)
   * [Suid Bit](#suid-bit)
-  * [Umask Command](#)
-  * [Chattr Command](#)
-* [Reading a File](#)
-* [File Monitoring](#)
-* [Vim Editor](#)
+  * [Umask Command](#umask-command)
+  * [Chattr Command](#chattr-command)
+* [Reading a File](#reading-a-file)
+* [File Monitoring](#file-monitoring)
+* [Vim Editor](#vim-editor)
 * [Find the File We're Looking for](#)
 * [File/Folder Processes](#)
   * [File Create](#)
@@ -430,4 +430,85 @@ chmod <ugoa><+=-><rwxst><file/directory>
 
 ## Suid Bit
 
+Imagine a file, a user does not have write authority. But that user needs to write temporarily. Users with the suid bit set will have this temporary permission.
 
+The command to set the command bit:
+
+```shell
+chmod u+s text.txt
+```
+
+The command to find the file/directory set to 'suit bit' on the system:
+
+```shell
+find / -perm -4000
+```
+
+## Umask Command
+
+It allows us to set the permissions that will be granted by default for newly created directories/files.
+
+```shell
+umask rwxr-r--r--
+```
+
+## Chattr Command
+
+Imagine a file, a config file. If you want to make absolutely no changes to this file, this command is for you.
+
+```shell
+chattr +i text.txt
+```
+
+To restore the file, click;
+
+```shell
+chattr -i text.txt
+```
+
+If you are wondering what are the protected files on the system?
+
+```shell
+lsattr -R <dizin>
+```
+
+# Reading a File
+
+If we want to read the inside of any file, it has different commands. You must be in the directory you want to read, or you must specify the directory after the command.
+
+```shell
+cat test.txt
+```
+
+or 
+
+```shell
+cat  ./folder/test.txt
+```
+
+or 
+
+```shell
+tail test.txt
+```
+
+we can also provide use in the shapes of;
+
+You have a text file and it's multi-line. This command allows you to easily read your text file, and if you press **enter**, it scrolls down line by line. If **Space** is pressed, it switches to the other page, we can say that there is actually a paging process. if you press the **b** key, it returns to the previous page.
+
+```shell
+more folder.txt
+```
+
+# File Monitoring
+
+It is a command that is usually used to track log files, but it can be used to track txt files.
+
+```shell
+tail -c 50  text.txt  //it can see 50 byte data.
+tail text.txt -> son //it can see 10 line.
+tail -f  /var/log/syslog //use to watch log
+tail -F text.txt //it takes snapshots of the changes of the txt file and gives information.
+```
+
+# Vim Editor

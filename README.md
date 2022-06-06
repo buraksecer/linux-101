@@ -479,7 +479,7 @@ ya da
 tail test.txt
 ```
 
-şekillerinde kullanıl sağlayabiliriz ayrıca;
+şekillerinde kullanım sağlayabiliriz ayrıca;
 
 Bir metin dosyanız var ve çok satırlı. Bu komut metin dosyanızı kolayca okumanızı sağlar ve eğer **enter** tuşuna basarsanız satır satır ilerler aşağı doğru. **Space** basılırsa ise diğer sayfaya geçer, aslında bir sayfalama işlemi var diyebiliriz. **b** tuşuna basarsanız bir önceki sayfaya döner.
 
