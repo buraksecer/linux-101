@@ -47,7 +47,7 @@
 * [Reading a File](#reading-a-file)
 * [File Monitoring](#file-monitoring)
 * [Vim Editor](#vim-editor)
-* [Find the File We're Looking for](#)
+* [Find the File We are Looking for](#find-the-file-we-are-looking-for)
 * [File/Folder Processes](#)
   * [File Create](#)
   * [File Remove](#)
@@ -512,3 +512,80 @@ tail -F text.txt //it takes snapshots of the changes of the txt file and gives i
 ```
 
 # Vim Editor
+
+It is a text editor where you can open and edit your files. Now let's take a closer look at the vim commands.
+
+If you are using a linux debian base, let's install one first.
+
+```shell
+sudo apt-get install vim
+```
+File you want to open;
+
+```shell
+vim test.txt
+```
+
+You can open it in the form.
+
+> You give the following commands after opening the file.
+
+There are some commands that are given to use the Vim editor. You can see all the commands and their documentation with the help command as follows:
+
+```shell
+:help
+```
+
+There are some modes of Vim. In Insert mode, you can enter the file as you like. To do this, just press **i**.
+
+We have written the data to a file, now the task is to save and close the file, and to do this, exit the initial insertion mode by pressing the Esc key. To write a command, first type a semicolon ( : ), and then wq! And then press ENTER.
+
+```shell
+:wq!
+```
+
+Just use the q command to exit the file without saving the file! Like the following
+
+```shell
+:Q!
+```
+
+To delete the character under the cursor, we provide the **x** key in command mode. Move the cursor to the character that needs to be deleted and press Esc, and then press **x**.
+
+To undo it, press **u** in normal mode. Thus, the last change made is undone. **Ctrl+r** is used to fast forward changes.
+
+You have a file and it has thousands of lines. You want to make a call with the vim editor, there are dialing numbers as follows. Dec Decode numbers.
+
+After pressing **ESC**;
+
+```shell
+:/thewordtolookfor
+```
+
+If you want to move to the next searched word;
+
+```shell
+:n
+```
+
+By the way, I have 'shift + n', by Dec way :)
+
+If it is for the previous matching word:
+
+```shell
+:N
+```
+
+To change the word in the file;
+
+```shell
+:s/decodethesearchword/thereplacementword/
+```
+
+To make changes to the entire file: (gc asks for individual approval, only g is not approved, but it is not safe.)
+
+```shell
+:%s/decodethesearchword/thereplacementword/gc
+```
+
+# Find the File We are Looking for
