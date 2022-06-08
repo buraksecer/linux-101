@@ -48,11 +48,11 @@
 * [File Monitoring](#file-monitoring)
 * [Vim Editor](#vim-editor)
 * [Find the File We are Looking for](#find-the-file-we-are-looking-for)
-* [File/Folder Processes](#)
-  * [File Create](#)
-  * [File Remove](#)
-  * [File Copy](#)
-  * [File Move](#)
+* [File/Folder Processes](#file--folder-processes)
+  * [File Create](#file-create)
+  * [File Remove](#file-remove)
+  * [File Copy](#file-copy)
+  * [File Move](#file-move)
   * [File Change Name](#)
 * [Searching Word Inside File](#)
 * [Process Monitoring](#)
@@ -589,3 +589,93 @@ To make changes to the entire file: (gc asks for individual approval, only g is 
 ```
 
 # Find the File We are Looking for
+
+We can search for files by name in a directory or in the entire operating system. 
+In addition, we can only search for files with the extension txt.
+
+We can use to **find** command for this.
+
+```shell
+find ./Desktop -name test.txt
+```
+
+Or we can search txt extension files
+
+```shell
+find ./Desktop -name *.txt
+```
+
+Or we can search for files that have been tested in it as a kind of like.
+
+```shell
+find ./Desktop -type f -name "*test*"
+```
+
+# File/Folder Processes
+
+**-r** should be used for directory operations.
+
+## File Create
+
+```shell
+mkdir file1
+```
+
+Created file with directory;
+
+```shell
+mkdir file1/test
+```
+
+Creating a nested;
+
+```shell
+mkdir -p resim/b1/b2
+```
+
+Created Folder;
+
+```shell
+touch text.txt
+```
+
+## File Remove
+
+-we can delete the directory if it is used with -r
+
+```shell
+rm -r file
+```
+
+Just remove file;
+
+```shell
+rm file 
+```
+
+ya da
+
+```shell
+rmdir file
+```
+
+## File Copy
+
+```shell
+cp -r source_file target_location
+```
+
+If it is not directory
+
+```shell
+cp source_file target_location
+```
+
+If the transport is to be carried out using ssh;
+
+```shell
+scp source_file target_location
+scp myfile.txt remoteuser@remoteserver:/remote/folder/
+```
+
+## File Move
