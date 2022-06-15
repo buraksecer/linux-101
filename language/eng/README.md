@@ -53,9 +53,9 @@
   * [File Remove](#file-remove)
   * [File Copy](#file-copy)
   * [File Move](#file-move)
-  * [File Change Name](#)
-* [Searching Word Inside File](#)
-* [Process Monitoring](#)
+  * [File Change Name](#file-change-name)
+* [Searching Word Inside File](#searching-word-inside-file)
+* [Process Monitoring](#process-monitoring)
 * [Foreground - Background Process](#)
 * [Cron Jobs](#)
 * [Users Processes](#)
@@ -679,3 +679,72 @@ scp myfile.txt remoteuser@remoteserver:/remote/folder/
 ```
 
 ## File Move
+
+If you want to move the file as it is;
+
+```shell
+mv file1 target_location
+```
+
+## File Change Name
+
+it can be done with the mv command. First, enter the file or folder that you want to change, and then the new name.
+
+```shell
+mv file1 new_name
+```
+
+# Searching Word Inside File
+
+You have a file with 1000 lines and you want to see if the following word is in it.
+
+```shell
+grep query file
+```
+
+For example, we have got a log.txt file. We want to search error in txt.
+
+```shell
+grep error log.txt
+```
+
+For a search without Decoupling uppercase / lowercase letters;
+
+```shell
+grep -i query file
+```
+
+Or how many error words are passed? let's look at the log file?
+
+```shell
+grep -c error log.txt
+```
+
+Or you have a files directory. Are you saying where is this error? What file does it have?
+
+```shell
+grep -l error ./*
+```
+
+# Process Monitoring
+
+There are some fixed values in the operating system. All system users, or some of them, read and use these constants at any time. Now we'll look at how to define these variables and how to read the list of these variables.
+
+we will define a variable named burak.
+
+```shell
+export burak=31
+```
+
+After define;
+
+```shell
+printenv
+```
+
+Let's run the command and see if the environment variable we have defined is in the list?
+
+If linux is restarted, this variable is unfortunately lost.To make this permanent, you need to add this **export** command inside the **/etc/bashrc** file.
+
+# Process Monitoring
+
