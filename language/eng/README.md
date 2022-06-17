@@ -748,3 +748,91 @@ If linux is restarted, this variable is unfortunately lost.To make this permanen
 
 # Process Monitoring
 
+The most topic in operation system of course process. We can watch in terminal from a few method.
+
+With to the following command,
+
+- a: It shows all processes.
+- u: It shows with include other users.
+
+```shell
+ps -au
+```
+
+There is also a command that provides real-time streaming.
+
+```shell
+top
+```
+[![top](https://i.ibb.co/72trPs9/top.png "top")](https://i.ibb.co/72trPs9/top.png "top")
+
+For an enhanced monitoring experience(**sudo apt install atop **necessary);
+
+```shell
+atop
+```
+
+[![atop](https://i.ibb.co/wN8SRh6/atop.png "atop")](https://i.ibb.co/wN8SRh6/atop.png "atop")
+
+For interactive process viewer(**sudo apt install htop**)
+
+```shell
+htop
+```
+
+[![htop](https://i.ibb.co/GJD8nbS/htop.png "htop")](https://i.ibb.co/GJD8nbS/htop.png "htop")
+
+For a tree-linked process list;
+
+```shell
+pstree
+```
+
+[![pstree](https://i.ibb.co/ZcXg23n/pstree.png "pstree")](https://i.ibb.co/ZcXg23n/pstree.png "pstree")
+
+# Foreground - Background Process
+
+[Watch Process](https://github.com/buraksecer/linux-101#process-i%CC%87zleme "Watch Process") We have committed. Now, We are looking for this process and how can make process.
+
+List of job parts;
+
+```shell
+jobs
+
+We can get with this command.
+
+When we write a command on terminal, If our command is 'Foreground' , we have to wait for finish process. So this command lock the cursor. Exact opposite the 'Foreground' , the 'Background' job is running on background in asynchronous. Let's for an exaple;
+
+```shell
+sleep 20
+```
+
+If you run the command, it's sleep for 20 second and you don't never put the command on terminal. This is a 'foreground' process. But;
+
+```shell
+sleep 20 &
+```
+
+If you say, go and work with 'backgroud' process on backend in asynchronous. This time it return a process id and when you type jobs, you will see the progress you created as it continues.
+
+If you want to make a process foreground first
+
+```shell
+jobs -l
+```
+
+First we list the working jobs and get the job index id we want.
+
+```shell
+fg 1
+```
+
+by doing this, we are turning this process into foreground now. Likewise;
+
+```shell
+bg 1
+```
+
+by doing this, we are making the process a background process.
+
+# Cron Jobs
