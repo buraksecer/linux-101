@@ -56,14 +56,14 @@
   * [File Change Name](#file-change-name)
 * [Searching Word Inside File](#searching-word-inside-file)
 * [Process Monitoring](#process-monitoring)
-* [Foreground - Background Process](#)
-* [Cron Jobs](#)
-* [Users Processes](#)
-  * [User Add](#)
-  * [User Remove](#)
-  * [User List](#)
-  * [User Update](#)
-  * [User Update Password](#)
+* [Foreground - Background Process](#foreground-background-process)
+* [Cron Jobs](#cron-jobs)
+* [Users Processes](#users-processes)
+  * [User Add](#user-add)
+  * [User Remove](#user-remove)
+  * [User List](#user-list)
+  * [User Update](#user-update)
+  * [User Update Password](#user-update-password)
 * [Change User and Do Something with Other User](#)
 * [Examine Disk Status](#)
 * [Ip Address List](#)
@@ -836,3 +836,51 @@ bg 1
 by doing this, we are making the process a background process.
 
 # Cron Jobs
+
+We call threads that run at a certain time cron job. How to understand a cron runtime?
+
+```shell
+# Example of job definition:
+# .---------------- minute (0 - 59)
+# |  .------------- hour (0 - 23)
+# |  |  .---------- day of month (1 - 31)
+# |  |  |  .------- month (1 - 12) OR jan,feb,mar,apr ...
+# |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
+# |  |  |  |  |
+# *  *  *  *  * user-name command to be executed
+17 *	* * *	root    cd / && run-parts --report /etc/cron.hourly
+```
+
+If you go to cd /etc and you run cat crontab, you look this description. Here tells us that how to setup cron but I give a site for you. I like this site because very easy-to-understand.[CrontabGuru](https://crontab.guru/ "CrontabGuru") this is an easy way to cron print.
+
+After telling abouh them, let's create a cron job.
+
+crontab -e | -r | -l
+
+- e: Edit
+- r: Remove
+- l: List
+
+Aşağıdaki komut sayesinde cron dosyamızı edit yapabiliriz. Size ilk açılırken hangi editör ile devam edelim diye soruyor, ben vim ile devam ettim.
+
+We can edit to cron file with under the following command. When It first opens, it asks you; Which editor will you use?
+
+```shell
+crontab -e
+```
+
+Now we are adding the under the following command
+
+```shell
+*/5 * * * * tar -cvzf /source/directory/log.tar.gz  /target/directory
+```
+
+After recording and exiting, job now creates and overwrites a log compression file every 5 minutes.
+
+## Cron Job Log Monitor
+
+After installing cron job you can monitor the snapshot;
+
+```shell
+tail -F CRON /var/log/syslog
+```
