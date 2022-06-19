@@ -931,7 +931,7 @@ su burak
 - Boyut (Size) – Dosya sisteminin toplam boyutunu gösterir.
 - Kullanılan (Used) – Dosya sisteminde kullanılan disk alanını boyutunu gösterir.
 - Kullanılabilir (Available) – Dosya sisteminde boş olan disk alanı boyutunu gösterir.
-- Kullanılan% (Use%) – Kullanılan disk alanı yüzdesini gösterir.
+- Kullanılan (Use) – Kullanılan disk alanı yüzdesini gösterir.
 - Bağlı olduğu (Mounted On) – Son sütun dosya sisteminin nereye bağlı olduğunu gösterir.
 - df -h – Daha iyi ve daha insan tarafından okunabilir formatta gösterecek. Bu şekilde disk boyutu GB ile gösterilecek. (Eğer boyut 1 GB’dan daha küçükse MB veya hatta B ile gösterilir.)
 - df -m – Dosya sistemi kullanımını MB ile göstermek için kullanılabilir.

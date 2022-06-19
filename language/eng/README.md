@@ -64,10 +64,10 @@
   * [User List](#user-list)
   * [User Update](#user-update)
   * [User Update Password](#user-update-password)
-* [Change User and Do Something with Other User](#)
-* [Examine Disk Status](#)
-* [Ip Address List](#)
-* [Let's Ping](#)
+* [Change User and Do Something with Other User](#change-user-and-do-something-with-other-user)
+* [Examine Disk Status](#examine-disk-status)
+* [Ip Address List](#ip-address-list)
+* [Let's Ping](#lets-ping)
 * [DNS List](#)
 * [Let's Upload a Package with Package Manager](#)
 * [Let's Connect Remote Server with SSH](#)
@@ -884,3 +884,87 @@ After installing cron job you can monitor the snapshot;
 ```shell
 tail -F CRON /var/log/syslog
 ```
+
+# Users Processes
+
+## User Add
+
+```shell
+adduser burak
+```
+
+It's want to password after you will write this command. If you enter the admin password, well done, user created.
+You can see the new user file under the following /home directory that name of the created user.
+
+## User Remove
+
+```shell
+deluser --remove-home burak
+```
+
+## User List
+
+```shell
+chage -l burak
+```
+
+## User Update
+
+```shell
+chfn burak
+```
+
+## User Update Password
+
+```shell
+passwd burak
+```
+
+# Change User and Do Something with Other User
+
+Now, we switch that user of created above and we work with its shell.
+
+```shell
+su - burak
+```
+It will wanna password.
+
+Well, there is other command this is change other user. But you can just write command by user of changed.
+
+```shell
+su burak
+```
+
+# Examine Disk Status
+
+([Source](https://www.hostinger.web.tr/rehberler/disk-kullanimi-nedir/ "Source"))
+
+[![pasted-image-0-75](https://www.hostinger.web.tr/rehberler/wp-content/uploads/sites/6/2017/04/pasted-image-0-75.png "pasted-image-0-75")](https://www.hostinger.web.tr/rehberler/wp-content/uploads/sites/6/2017/04/pasted-image-0-75.png "pasted-image-0-75")
+
+- File system (Filesystem) - Gives name of file system.
+- Size (Size) - Gives total size of file system.
+- Used (Used) - Gives used to disk size of file system.
+- Available (Available) - Gives free disk capacity of file system.
+- Use (Use) - Shows the percentage of disk space used.
+- Mounted On (Mounted On) - Shows the depending where file system.
+- df -h – Shows the readable and well format for us. Shows the disk size with GB in this way. (If the size lower 1 GB we'll see MB or B)
+- df -m – Can use to show with MB of the file system.
+- df -k – As before, can use to show with KB of the file system.
+- df -T – It is used to indicate the type of file system (it will appear in a new column).
+- df -ht /home – Using this command, you can see information about a particular file system (in the format that a person can read).
+- df --help – It shows useful commands that you can use, as well as information about commands.
+- du /home/user/Desktop/ – This option allows you to view the user's Desktop and provides information about the disk usage of folders and files on our Desktop.
+- du -h /home/user/Desktop/ – Just like in df, the -h option displays information in a more readable format.
+- du -sh /home/user/Desktop/ – The -s option returns the total size of a specified folder (in this case, it indicates the total size of the Desktop).
+- du -m /home/user/Desktop/ – Just like in df, this will provide us with information in Megabytes (you can use -k to see information in kilobytes.
+- du -h --time /home/user/Desktop/ – This will give us information based on the last modified date of the files and folders displayed.
+- df --help – It shows use to other useful command for us and it will provided more information for us.
+
+# Ip Address List
+
+```shell
+curl ifconfig.me
+```
+
+# Let's Ping
+
