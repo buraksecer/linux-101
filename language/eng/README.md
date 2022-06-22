@@ -68,9 +68,9 @@
 * [Examine Disk Status](#examine-disk-status)
 * [Ip Address List](#ip-address-list)
 * [Let's Ping](#lets-ping)
-* [DNS List](#)
-* [Let's Upload a Package with Package Manager](#)
-* [Let's Connect Remote Server with SSH](#)
+* [DNS List](#dns-list)
+* [Let's Upload a Package with Package Manager](#lets-upload-a-package-with-package-manager)
+* [Let's Connect Remote Server with SSH](#lets-connect-remote-server-with-ssh)
 * [Linux Services](#)
   * [systemd](#)
   * [systemctl](#)
@@ -968,3 +968,56 @@ curl ifconfig.me
 
 # Let's Ping
 
+Sending 1 packet to a website and seeing if we can get an answer is called pinging.
+
+For example:
+
+```shell
+ping google.com
+```
+
+Here, a foreground process runs until you stop it.
+
+```shell
+ping -c 3 google.com
+```
+
+It will send 3 pings and after ending but still this is a foreground process.
+
+# Dns List
+
+For the local linux's dns settings and list;
+
+```shell
+cat /etc/resolv.conf 
+```
+
+For the a domain details;
+
+ ```shell
+nslookup -type=mx google.com
+```
+
+# Let's Upload a Package with Package Manager
+
+To update the latest version information of the installed packages of your local system;
+
+The following command does not update packages, it only updates their current dependencies and which repos packages use. We can get list this command **/etc/apt/sources.list ** .
+
+```shell
+sudo apt-get update
+```
+
+Let's install a node on our linux now.
+
+```shell
+sudo apt install nodejs
+```
+
+A check is required after the installation is finished:
+
+```shell
+node –version
+```
+
+# Let's Connect Remote Server with SSH

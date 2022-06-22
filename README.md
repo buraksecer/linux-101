@@ -954,7 +954,7 @@ curl ifconfig.me
 
 # Bir Domaini Pingleme
 
-Bir web sitesine 1 paket gönderip cevap alabiliyor muyuz bakmaya pingleme denir.
+Bir web sitesine 1 paket gönderip cevap alabiliyor muyuz bakmaya, pingleme denir.
 
 Örnek bir ping komutu:
 
@@ -968,7 +968,7 @@ Burada siz durdurana kadar foreground bir process çalışır.
 ping -c 3 google.com
 ```
 
-Derseniz 3 adet ping atacak ve sonlanacak fakat hala bir foreground process'dir.
+Derseniz; 3 adet ping atacak ve sonlanacak fakat hala bir foreground process'dir.
 
 # Bir Domainin Dns Kayıtlarını Listeleme
 
