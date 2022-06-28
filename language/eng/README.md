@@ -1021,3 +1021,29 @@ node –version
 ```
 
 # Let's Connect Remote Server with SSH
+
+SSH is a tunnel that provides communication between two networks in an encrypted Dec. When making a connection, information is sent to the other party in an encrypted way. The important point is that in order to perform ssh, the ssh service must be running on the opposite side.
+
+First, let's look at how the SSH service works and start it if it's not active;
+
+```shell
+service ssh status
+```
+
+Let's start the SSH service:
+
+```shell
+service ssh start
+```
+
+Now we can now open an SSH connection.
+
+```shell
+ssh kullanici@ipadresi
+```
+
+this commander will then ask you for a password and a connection will be opened for laps. Now that you are connected to the linux of your remote server, good luck.
+
+# Linux Services
+
+## systemd
