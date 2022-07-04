@@ -71,10 +71,10 @@
 * [DNS List](#dns-list)
 * [Let's Upload a Package with Package Manager](#lets-upload-a-package-with-package-manager)
 * [Let's Connect Remote Server with SSH](#lets-connect-remote-server-with-ssh)
-* [Linux Services](#)
-  * [systemd](#)
-  * [systemctl](#)
-* [Compression Operations](#)
+* [Linux Services](#linux-services)
+  * [systemd](#systemd)
+  * [systemctl](#systemctl)
+* [Compression Operations](#compression-operations)
   * [zip](#zip)
   * [gzip](#gzip)
   * [tar](#tar) 
@@ -1047,3 +1047,97 @@ this commander will then ask you for a password and a connection will be opened 
 # Linux Services
 
 ## systemd
+
+systemd is brother another services. Where a service runs or stops, there is systemd there. Linux distro usually use systemd.
+It runs services and collects logs every time the operating system starts.
+
+## systemctl
+
+This is the command that provides systemd management. Let's look at some commands.
+
+```shell
+sudo systemctl status //It show the whole services status.
+```
+
+```shell
+sudo systemctl status apache2 //It show the apache2 status
+```
+
+```shell
+sudo systemctl start/restart/stop apache2 
+//apache2 forstart/forrestart/forstop for using the command.
+```
+
+```shell
+sudo service —status-all | less //It show the sevices status and provide the scrool on list.
+```
+
+```shell
+sudo systemctl disable/enable apache2 //apache2 service deactive/active.
+```
+
+```shell
+sudo journalctl -u apache2.service //It show the Apache2 logs.
+```
+
+# Compression Operation
+
+There are many copression command:
+
+- zip
+- gzip
+- tar
+
+## zip
+
+Create a zip,
+
+```shell
+zip -r test.zip ziptarget
+```
+
+Create zip with password,
+
+```shell
+zip -r -P 1234 test.zip ziptarget
+```
+
+Open the zip,
+
+```shell
+unzip file.zip
+```
+
+Open the zip with password,
+
+```shell
+unzip -P password file.zip
+```
+
+## gzip
+
+it want to compression quality when create a gzip.
+
+This quality, 1 lowest but faster, 9 higher but slowly.
+
+Create Gzip,
+
+```shell
+gzip -9 index.html
+```
+
+Here it is necessary to pay attention to the index.html.changes it to gz, the direct file that it compresses
+he is himself. We have given 9 as parameters. The highest value for the best compression experience
+we have given.
+
+Create Gzip Directory,
+
+```shell
+gzip -9 -r file
+```
+
+Open the Gzip,
+
+```shell
+gunzip index.html.gz
+```
