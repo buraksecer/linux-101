@@ -1080,7 +1080,7 @@ sudo systemctl disable/enable apache2 //apache2 service deactive/active.
 sudo journalctl -u apache2.service //It show the Apache2 logs.
 ```
 
-# Compression Operation
+# Compression Operations
 
 There are many copression command:
 
@@ -1140,4 +1140,19 @@ Open the Gzip,
 
 ```shell
 gunzip index.html.gz
+```
+
+
+## tar
+
+Creare Tar,
+
+```shell
+tar -cvf test.tar targetzip
+```
+
+Open Tar,
+
+```shell
+tar -xvf test.tar
 ```
