@@ -495,7 +495,7 @@ Genellikle log dosyalarını izlemek için kullanılan bir komuttur fakat txt do
 tail -c 50  text.txt         //50 byte'lık veri görüntüler
 tail text.txt -> son         //10 satırı görüntüler
 tail -f  /var/log/syslog     //log izlemek için kullanılır
-tail -F text.txt.            //txt dosyasının değişikliklerini anlık görüntüler ve bilgi verir.
+tail -F text.txt             //txt dosyasının değişikliklerini anlık görüntüler ve bilgi verir.
 ```
 
 # Vim Editörü
