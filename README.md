@@ -173,45 +173,45 @@ Terminalde çalıştırdığımız her komut aslında hemen kaybolmazlar. Bu kom
 
 Verdiğiniz son 10 komutu listeler:
 
-```shell
+```bash
 history 10
 ```
 ## man
 
 Terminalde bir komutun detaylarına erişmek için bu komut kullanılır.
 
-```shell
+```bash
 man exit
 ```
 
 ## shutdown
 
 Hemen kapat:
-```shell
+```bash
 shutdown
 ```
 
 Kapat ve yeniden aç (restart):
 
-```shell
+```bash
 shutdown -r
 ```
 
 20 dakika sonra kapat:
 
-```shell
+```bash
 shutdown +20
 ```
 
 20 dakika sonra restart:
 
-```shell
+```bash
 shutdown -r 20
 ```
 
 Saat 17:30 da kapat:
 
-```shell
+```bash
 shutdown -h 17:30
 ```
 
@@ -223,11 +223,11 @@ dig komutu ile A kayıtları görüntüleyebiliriz.
 
 `Adres (A) kaydı, host adını bir IP adresine yönlendirir. Örneğin, server.domainame.com adresinin direkt olarak sizin ana bilgisayarınıza (ip adresi 111.111.111.111 olsun) yönlendirilmesini istiyorsanız, şunun gibi bir kayıt girmeniz gerekir: domainame.com. A 111.111.111.111`
 
-```shell
+```bash
 dig buraksecer.com // Answer Section altında A kaydını görebiliriz.
 ```
 
-```shell
+```bash
 dig buraksecer.com -t NS //name server listeler
 ```
 
@@ -253,24 +253,24 @@ curl, aşağıdaki protokolleri destekler:
 
 Hadi bir get isteği atalım;
 
-```shell
+```bash
 curl https://www.buraksecer.com //sitenin içeriğini size döner. 
 ```
 
 Eğer benim güncel cv mi komutu çalıştırdığınız dizine indirmek istiyorsanız buyrun :sunglasses: 
 
-```shell
+```bash
 curl -o burak.pdf https://www.buraksecer.com/wp-content/uploads/2021/12/burak-secer-up.pdf
 ```
 Şimdi bir FTP protokolü kullanalım;
 Dosya indirme işlemi,
 
-```shell
+```bash
 curl -u root:password -O ftp://sunucu/dosya.tar.gz
 ```
 
 Dosya yükleme işlemi,
-```shell
+```bash
 curl -u root:password -T dosya.tar.gz ftp://sunucu
 ```
 Daha fazlası için man curl yazıp inceleyebilirsiniz.
@@ -279,7 +279,7 @@ Daha fazlası için man curl yazıp inceleyebilirsiniz.
 
 Kullandığınız linux dağıtımını öğrenmek için;
 
-```shell
+```bash
 lsb_release -a
 ```
 
@@ -287,13 +287,13 @@ lsb_release -a
 
 Eğer bu komutu çalıştırırsanız ekrana bir takvim gelir.
 
-```shell
+```bash
 cal
 ```
 
 Belirli bir tarihin takvimini görmek için;
 
-```shell
+```bash
 cal 1 1992 //1. ayı gösterir
 ```
 
@@ -301,7 +301,7 @@ cal 1 1992 //1. ayı gösterir
 
 Sistemin o an tarihini veren komuttur.
 
-```shell
+```bash
 date
 ```
 
@@ -309,7 +309,7 @@ date
 
 Kullanılan karnel versiyonunu öğrenmek için kullanılan komuttur.
 
-```shell
+```bash
 uname
 ```
 
@@ -319,7 +319,7 @@ uname
 - who: O an hangi kimlikle çalıştığınız.
 - who am i: who'dan farklı daha detaylı bir bilgi sağlar.
 
-```shell
+```bash
 w
 
 who
@@ -331,7 +331,7 @@ who am i
 
 Sistemin ne kadar zamandır açık kaldığını görmek istersek kullanıyoruz.
 
-```shell
+```bash
 uptime
 ```
 
@@ -339,7 +339,7 @@ uptime
 
 Linux'da kullanılan host adını verir.
 
-```shell
+```bash
 hostname
 ```
 
@@ -347,23 +347,23 @@ hostname
 
 Linux sistemimizde o an bellek durumunu öğrenmemize yardım eden komuttur.
 
-```shell
+```bash
 free
 ```
 
-```shell
+```bash
 free -b
 ```
 
-```shell
+```bash
 free -k
 ```
 
-```shell
+```bash
 free -m
 ```
 
-```shell
+```bash
 free -g
 ```
 [![](https://i.ibb.co/rQHkkZC/lnx2.png)](https://i.ibb.co/rQHkkZC/lnx2.png)
@@ -397,7 +397,7 @@ Hemen alt satırda **total 32** yazıyor. Bu iç içe geçmiş dosyalar dahil b�
 
 Erişim yetkileri önemli bir konu olduğu için bu manipülasyon işlemini sadece root kullanıcısı yapabilir. Erişim yetkilerini değiştirirken **chmod** komutu kullanılır.
 
-```shell
+```bash
 chmod <ugoa><+=-><rwxst><dosya/dizin>
 ```
 - u: Dosya ya da dizin sahibi, user.
@@ -421,13 +421,13 @@ Suit biti ayarlama komutu:
 
 
 
-```shell
+```bash
 chmod u+s text.txt
 ```
 
 Sistemdeki suit biti ayarlanmış dosya/dizin bulma komutu:
 
-```shell
+```bash
 find / -perm -4000
 ```
 
@@ -435,7 +435,7 @@ find / -perm -4000
 
 Yeni oluşturulan dizin/dosyalar için varsayılan olarak verilecek izinleri ayarlamamıza yarar.
 
-```shell
+```bash
 umask rwxr-r--r--
 ```
 
@@ -443,19 +443,19 @@ umask rwxr-r--r--
 
 Bir dosya düşünün, config dosyası. Bu dosyanın içinde kesinlikle değişiklil yaplmasın diyorsanız bu komut tam size göre.
 
-```shell
+```bash
 chattr +i text.txt
 ```
 
 Dosyayı eski haline getirmek için ise;
 
-```shell
+```bash
 chattr -i text.txt
 ```
 
 Sistemde korumalı dosyalar neler merak ediyorsanız?
 
-```shell
+```bash
 lsattr -R <dizin>
 ```
 
@@ -463,19 +463,19 @@ lsattr -R <dizin>
 
 Her hangi bir dosyanın içini okumak istiyorsak bunun farklı komutları vardır. Okumak istediğiniz dizinde olmalısınız ya da dizini komuttan sonra belirtmelisiniz.
 
-```shell
+```bash
 cat test.txt
 ```
 
 ya da 
 
-```shell
+```bash
 cat  ./folder/test.txt
 ```
 
 ya da 
 
-```shell
+```bash
 tail test.txt
 ```
 
@@ -483,7 +483,7 @@ tail test.txt
 
 Bir metin dosyanız var ve çok satırlı. Bu komut metin dosyanızı kolayca okumanızı sağlar ve eğer **enter** tuşuna basarsanız satır satır ilerler aşağı doğru. **Space** basılırsa ise diğer sayfaya geçer, aslında bir sayfalama işlemi var diyebiliriz. **b** tuşuna basarsanız bir önceki sayfaya döner.
 
-```shell
+```bash
 more folder.txt
 ```
 
@@ -491,7 +491,7 @@ more folder.txt
 
 Genellikle log dosyalarını izlemek için kullanılan bir komuttur fakat txt dosyalarını izlemek içinde kullanılabilir.
 
-```shell
+```bash
 tail -c 50  text.txt  //50 byte'lık veri görüntüler
 tail text.txt -> son //10 satırı görüntüler
 tail -f  /var/log/syslog //log izlemek için kullanılır
@@ -504,12 +504,12 @@ Dosyalarınızı açıp düzenleyebileceğiniz bir text editörüdür. Şimdi vi
 
 Debian base bir linux kullanıyorsanız önce bir install edelim.
 
-```shell
+```bash
 sudo apt-get install vim
 ```
 Açmak istediğiniz dosyayı;
 
-```shell
+```bash
 vim test.txt
 ```
 
@@ -519,7 +519,7 @@ vim test.txt
 
 Vim düzenleyicisini kullanmak için verilen bazı komutlar vardır. Tüm komutları ve belgelerini help komutuyla aşağıdaki gibi görebilirsiniz:
 
-```shell
+```bash
 :help
 ```
 
@@ -527,13 +527,13 @@ Vim bazı modları vardır. Insert modunda dosyaya istediğiniz gibi girdi yapab
 
 Verileri bir dosyaya yazdık, şimdi görev, dosyayı kaydedip kapatmak ve bunu yapmak için Esc tuşuna basarak ilk ekleme modundan çıkmak. Bir komut yazmak için önce noktalı virgül (   :   ) yazın ve ardından wq! Ve sonra ENTER'a basın.
 
-```shell
+```bash
 :wq!
 ```
 
 Dosyayı kaydetmeden dosyadan çıkmak için sadece q komutunu kullanın! Aşağıdaki gibi
 
-```shell
+```bash
 :Q!
 ```
 
@@ -545,12 +545,12 @@ Bir dosyanız var ve binlerce satır var. Arama yapmak istiyorsunuz vim editör�
 
 **ESC** bastıktan sonra;
 
-```shell
+```bash
 :/aranacakkelime
 ```
 Eğer bir sonraki aranan kelimeye geçmek istiyorsanız;
 
-```shell
+```bash
 :n
 ```
 
@@ -558,18 +558,18 @@ Bende shift + n oldu bu arada :)
 
 Bir önceki eşleşen kelime için ise:
 
-```shell
+```bash
 :N
 ```
 Dosyadaki kelimeyi değiştirmek için;
 
-```shell
+```bash
 :s/arama sözcüğü/değiştirme sözcüğü/
 ```
 
 Bütün dosyada değişiklik yapmak için: (gc tek tek onay ister sadece g onaysızdır ama güvenli değildir.)
 
-```shell
+```bash
 :%s/arama sözcüğü/değiştirme sözcüğü/gc
 ```
 
@@ -579,19 +579,19 @@ Bir dizin içerisinde veya bütün işletim sistemi içerisinde isme göre dosya
 
 Bunun için **find** komutu kullanıyoruz.
 
-```shell
+```bash
 find ./Desktop -name test.txt
 ```
 
 Veya txt uzantılı dosyaları arayabiliriz.
 
-```shell
+```bash
 find ./Desktop -name *.txt
 ```
 
 Veya içinde test geçen dosyaları arayabiliriz bir nevi like gibi.
 
-```shell
+```bash
 find ./Desktop -type f -name "*test*"
 ```
 
@@ -601,25 +601,25 @@ Dizin işlemlerinde **-r** kullanılmalıdır.
 
 ## Dosya Oluşturma
 
-```shell
+```bash
 mkdir dosya1
 ```
 
 Dizinli dosya oluşturma
 
-```shell
+```bash
 mkdir dosya1/test
 ```
 
 İç içe oluşturma
 
-```shell
+```bash
 mkdir -p resim/b1/b2
 ```
 
 Klasör oluşturma;
 
-```shell
+```bash
 touch text.txt
 ```
 
@@ -627,37 +627,37 @@ touch text.txt
 
 -r ile kullanılırsa dizin silebiliriz.
 
-```shell
+```bash
 rm -r dosya
 ```
 
 Sadece dosya silmek için;
 
-```shell
+```bash
 rm dosya 
 ```
 
 ya da
 
-```shell
+```bash
 rmdir dosya
 ```
 
 ## Dosya Kopyalama
 
-```shell
+```bash
 cp -r kopyalanan_dosya kopyalancak_konum
 ```
 
 Eğer bir dizin değil ise;
 
-```shell
+```bash
 cp kopyalanan_dosya kopyalancak_konum
 ```
 
 Eğer ssh ile taşıma yapılacak ise;
 
-```shell
+```bash
 scp kopyalanan_dosya kopyalancak_konum
 scp myfile.txt remoteuser@remoteserver:/remote/folder/
 ```
@@ -666,7 +666,7 @@ scp myfile.txt remoteuser@remoteserver:/remote/folder/
 
 Dosyayı olduğu gibi taşımak istiyorsanız;
 
-```shell
+```bash
 mv dosya1 tasinacagi_konum
 ```
 
@@ -674,7 +674,7 @@ mv dosya1 tasinacagi_konum
 
 mv komutu ile yapılabiliyor. İlk önce değiştirmek istediğiniz dosya ya da klasör yazılıyor sonra yeni ismi.
 
-```shell
+```bash
 mv dosya1 yeni_isim
 ```
 
@@ -682,31 +682,31 @@ mv dosya1 yeni_isim
 
 Bir dosyanız var 1000 satırlık ve içinde şu kelime geçiyor mu bakmak istiyorsunuz.
 
-```shell
+```bash
 grep sorgu dosya
 ```
 
 Mesela log.txt var elinizde ve içinde error var mı bakmak istiyorsunuz.
 
-```shell
+```bash
 grep error log.txt
 ```
 
 Büyük / küçük harf ayırmadan arama için;
 
-```shell
+```bash
 grep -i sorgu dosya
 ```
 
 Ya da kaç tane error kelimesi geçiyor şu log dosyasında bakalım?
 
-```shell
+```bash
 grep -c error log.txt
 ```
 
 Ya da bir dosyalar dizininiz var acaba diyorsunuz şu error nerde hangi dosyada var?
 
-```shell
+```bash
 grep -l error ./*
 ```
 
@@ -716,13 +716,13 @@ grep -l error ./*
 
 burak isminde bir değişken tanımlayacağız.
 
-```shell
+```bash
 export burak=31
 ```
 
 Tanım yaptıktan sonra;
 
-```shell
+```bash
 printenv
 ```
 
@@ -739,25 +739,25 @@ Aşağıdaki komut sayesinde,
 - a: Bütün process'leri göster.
 - u: Diğer kullanıcılar da dahil olmak üzere göster.
 
-```shell
+```bash
 ps -au
 ```
 
 Sadece belli bir kullanıcının precess'lerini listelemek için;
 
-```shell
+```bash
 ps -u root
 ```
 Birde gerçek zamanlı akış sağlayan bir komut var;
 
-```shell
+```bash
 top
 ```
 [![top](https://i.ibb.co/72trPs9/top.png "top")](https://i.ibb.co/72trPs9/top.png "top")
 
 Gelişmiş bir monitöring için(**sudo apt install atop **gerekir);
 
-```shell
+```bash
 atop
 ```
 
@@ -765,7 +765,7 @@ atop
 
 Etkileşimli süreç görüntüleyici için(**sudo apt install htop**)
 
-```shell
+```bash
 htop
 ```
 
@@ -773,7 +773,7 @@ htop
 
 Ağaç bağlantılı process listesi için ise:
 
-```shell
+```bash
 pstree
 ```
 
@@ -785,7 +785,7 @@ pstree
 
 İş parçacıklarının listesini;
 
-```shell
+```bash
 jobs
 ```
 
@@ -793,13 +793,13 @@ Komutu ile alabiliyoruz.
 
 Foreground, siz bir komut verdiğiniz vakit teminalde o komutun/işlemin bitmesini bekliyoruz ya hani, işte o foreground oluyor. Yani işi ön yüzde yapıyor ve terminali kitliyor. Background ise bunun tam tersi, iş arka planda asenkron şekilde akıyor. Haydi bir örnek yapalım;
 
-```shell
+```bash
 sleep 20
 ```
 
 Bu komutu çalıştırırsanız 20 saniye boyunca uyutur ve siz hiç bir komut vb giriş yapamazsınız bu bize foreground 'u verir. Fakat;
 
-```shell
+```bash
 sleep 20 &
 ```
 
@@ -807,19 +807,19 @@ Derseniz, git bu işi bir background process olarak arkada asenkron yap. Bu sefe
 
 Bir process foreground yapmak istiyorsanız önce
 
-```shell
+```bash
 jobs -l
 ```
 
 Önce çalışan jobları listeliyoruz ve istediğimiz job index id alıyoruz.
 
-```shell
+```bash
 fg 1
 ```
 
 yaparak bu process artık foreground 'a çeviriyoruz. Aynı şekilde;
 
-```shell
+```bash
 bg 1
 ```
 
@@ -829,7 +829,7 @@ yaparak process'i background process yapıyoruz.
 
 Belli bir aralık ile çalışan iş parçacıklarına cron job diyoruz. Bir cron çalışma zamanı nasıl anlaşılır?
 
-```shell
+```bash
 # Example of job definition:
 # .---------------- minute (0 - 59)
 # |  .------------- hour (0 - 23)
@@ -838,7 +838,7 @@ Belli bir aralık ile çalışan iş parçacıklarına cron job diyoruz. Bir cro
 # |  |  |  |  .---- day of week (0 - 6) (Sunday=0 or 7) OR sun,mon,tue,wed,thu,fri,sat
 # |  |  |  |  |
 # *  *  *  *  * user-name command to be executed
-17 *	* * *	root    cd / && run-parts --report /etc/cron.hourly
+17 *  * * * root    cd / && run-parts --report /etc/cron.hourly
 ```
 
 Eğer linux'unuzda cd /etc gidip cat crontab derseniz bu açıklama ile karşılaşacaksınız. Burada örnek bir cron ve üzerinde cron time nasıl kurulur anlatmış ama ben size bir site vereceğim çok sevdiğim bir sitedir. [CrontabGuru](https://crontab.guru/ "CrontabGuru") sitesinden kolayca bir cron time çıktısı alabilirsiniz.
@@ -853,13 +853,13 @@ crontab -e | -r | -l
 
 Aşağıdaki komut sayesinde cron dosyamızı edit yapabiliriz. Size ilk açılırken hangi editör ile devam edelim diye soruyor, ben vim ile devam ettim.
 
-```shell
+```bash
 crontab -e
 ```
 
 Şimdi bir satır olarak aşağıdaki komutu ekliyoruz.
 
-```shell
+```bash
 */5 * * * * tar -cvzf /sikistirilacak/dizin/log.tar.gz  /sikisacak/dizin
 ```
 
@@ -869,7 +869,7 @@ Kayıt edip çıktıktan sonra artık job 5 dakikada bir log sıkıştırma dosy
 
 Cron job kurduktan sonra anlık monitör edebilirsiniz;
 
-```shell
+```bash
 tail -F CRON /var/log/syslog
 ```
 
@@ -877,32 +877,32 @@ tail -F CRON /var/log/syslog
 
 ##  Kullanıcı Ekleme
 
-```shell
+```bash
 adduser burak
 ```
 Bu komutu verdikten sonra sizden bir şifre isteyecek. Şifre girdikten sonra artık bir kullanıcı oluşturdunuz hayırlı olsun. /home klasörünün altında kullanıcı adı ile bir klasör göreceksiniz.
 
 ## Kullanıcı Silme
 
-```shell
+```bash
 deluser --remove-home burak
 ```
 
 ## Kullanıcı Bilgilerini Listeleme
 
-```shell
+```bash
 chage -l burak
 ```
 
 ## Kullanıcı Bilgilerini Güncelleme
 
-```shell
+```bash
 chfn burak
 ```
 
 ## Kullanıcı Parola Değiştirme
 
-```shell
+```bash
 passwd burak
 ```
 
@@ -910,14 +910,14 @@ passwd burak
 
 Şimdi bu yukarıdaki oluşturduğumuz kullanıcıya geçiş yapalım ve onun kabuğunda çalışalım.
 
-```shell
+```bash
 su - burak
 ```
 Şifre isteyecektir.
 
 Peki bir diğer komutta başka kullanıcıya geçiş yapmaktır fakat sadece komutları o kullanıcı olarak verirsiniz.
 
-```shell
+```bash
 su burak
 ```
 
@@ -948,7 +948,7 @@ su burak
 
 # Bilgisayarın Ip Adreslerini Listeleme
 
-```shell
+```bash
 curl ifconfig.me
 ```
 
@@ -958,13 +958,13 @@ Bir web sitesine 1 paket gönderip cevap alabiliyor muyuz bakmaya, pingleme deni
 
 Örnek bir ping komutu:
 
-```shell
+```bash
 ping google.com
 ```
 
 Burada siz durdurana kadar foreground bir process çalışır.
 
-```shell
+```bash
 ping -c 3 google.com
 ```
 
@@ -974,13 +974,13 @@ Derseniz; 3 adet ping atacak ve sonlanacak fakat hala bir foreground process'dir
 
 Local linux dns ayarları ve listesi için;
 
-```shell
+```bash
 cat /etc/resolv.conf 
 ```
 
 Bir domain ayrıntıları için;
 
- ```shell
+ ```bash
 nslookup -type=mx google.com
 ```
 
@@ -990,19 +990,19 @@ Yerel sisteminizin yüklü paketlerinin en son sürüm bilgilerini güncellemek 
 
 Aşağıdaki komut paketleri update etmez sadece güncel bağlılıklarını ve paketlerin hangi repoları kullandığını update eder, bu listeye **/etc/apt/sources.list **'den erişebiliriz.
 
-```shell
+```bash
 sudo apt-get update
 ```
 
 Haydi şimdi linux'umuza node kuralım.
 
-```shell
+```bash
 sudo apt install nodejs
 ```
 
 Yükleme bittikten sonra bir kontrol şart:
 
-```shell
+```bash
 node –version
 ```
 
@@ -1012,19 +1012,19 @@ SSH, şifreli bir şekilde iki ağ arasında iletişimi sağlayan bir tüneldir.
 
 Öncelikle SSH servisi ne alemde bakalım ve eğer aktif değilse başlatalım;
 
-```shell
+```bash
 service ssh status
 ```
 
 SSH servisini başlatalım:
 
-```shell
+```bash
 service ssh start
 ```
 
 Şimdi artık SSH bağlantısı açabiliriz.
 
-```shell
+```bash
 ssh kullanici@ipadresi
 ```
 
@@ -1042,29 +1042,29 @@ Systemd servislerin abisidir. Nerde bir servis çalışır ya da durur ise orada
 
 systemd yönetimini sağlayan komuttur. Gelin bazı komutları inceleyelim.
 
-```shell
+```bash
 sudo systemctl status //Bütün servislerin durumunu gösterir.
 ```
 
-```shell
+```bash
 sudo systemctl status apache2 //apache2 servisinin durumunu gösterir.
 ```
 
-```shell
+```bash
 sudo systemctl start/restart/stop apache2 
 //apache2 servisini başlatmak/yenidenbaşlatmak/durdurmak için kullanılan komut.
 ```
 
-```shell
+```bash
 sudo service —status-all | less //Servislerin durumunu gösterir ve listede scrool yapmanı sağlar.
 ```
 
-```shell
+```bash
 sudo systemctl disable/enable apache2 //apache2 servisini deaktif/aktif etme. 
 //Deaktif edilen servis kendi kendine(linux restart vb.) tekrar başlatılmaz!
 ```
 
-```shell
+```bash
 sudo journalctl -u apache2.service //Apache2 servisinin loglarını döker.
 ```
 
@@ -1080,25 +1080,25 @@ Bir çok sıkıştırma komutu vardır. Bunlardan bazıları;
 
 Zip oluşturma,
 
-```shell
+```bash
 zip -r test.zip ziplenecekhedef
 ```
 
 Şifreli zip oluşturma,
 
-```shell
+```bash
 zip -r -P 1234 test.zip ziplenecekhedef
 ```
 
 Zip açma,
 
-```shell
+```bash
 unzip acilacakzipdosyasi.zip
 ```
 
 Şifreli zip açma,
 
-```shell
+```bash
 unzip -P şifre acilacakzipdosyasi.zip
 ```
 
@@ -1109,7 +1109,7 @@ Bu kalite 1 en düşük ama hızlı, 9 yüksek ama yavaş sıkıştırır.
 
 Gzip oluşturma,
 
-```shell
+```bash
 gzip -9 index.html
 ```
 
@@ -1119,13 +1119,13 @@ verdik.
 
 Gzip dizin sıkıştırma,
 
-```shell
+```bash
 gzip -9 -r file
 ```
 
 Gzip açma,
 
-```shell
+```bash
 gunzip index.html.gz
 ```
 
@@ -1133,12 +1133,12 @@ gunzip index.html.gz
 
 Tar oluşturma,
 
-```shell
+```bash
 tar -cvf test.tar ziplenecekhedef
 ```
 
 Tar açma,
 
-```shell
+```bash
 tar -xvf test.tar
 ```
