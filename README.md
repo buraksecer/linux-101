@@ -492,10 +492,10 @@ more folder.txt
 Genellikle log dosyalarını izlemek için kullanılan bir komuttur fakat txt dosyalarını izlemek içinde kullanılabilir.
 
 ```shell
-tail -c 50  text.txt  //50 byte'lık veri görüntüler
-tail text.txt -> son //10 satırı görüntüler
-tail -f  /var/log/syslog //log izlemek için kullanılır
-tail -F text.txt //txt dosyasının değişikliklerini anlık görüntüler ve bilgi verir.
+tail -c 50  text.txt         //50 byte'lık veri görüntüler
+tail text.txt -> son         //10 satırı görüntüler
+tail -f  /var/log/syslog     //log izlemek için kullanılır
+tail -F text.txt.            //txt dosyasının değişikliklerini anlık görüntüler ve bilgi verir.
 ```
 
 # Vim Editörü
@@ -534,7 +534,7 @@ Verileri bir dosyaya yazdık, şimdi görev, dosyayı kaydedip kapatmak ve bunu 
 Dosyayı kaydetmeden dosyadan çıkmak için sadece q komutunu kullanın! Aşağıdaki gibi
 
 ```shell
-:Q!
+:q! 
 ```
 
 İmlecin altındaki karakteri silmek için komut modunda **x** tuşu sağlıyoruz. İmleci silinmesi gereken karaktere getirin ve Esc tuşuna basın ve ardından **x** tuşuna basın.
@@ -755,7 +755,7 @@ top
 ```
 [![top](https://i.ibb.co/72trPs9/top.png "top")](https://i.ibb.co/72trPs9/top.png "top")
 
-Gelişmiş bir monitöring için(**sudo apt install atop **gerekir);
+Gelişmiş bir monitöring için(**sudo apt install atop** gerekir);
 
 ```shell
 atop
@@ -1036,7 +1036,7 @@ bu komutan sonra sizden şifre isteyecek ve laps diye bağlantı açılacak. Art
 
 Systemd servislerin abisidir. Nerde bir servis çalışır ya da durur ise orada systemd vardır. Genelde linux dağıtımları systemd kullanır. İşletim sistemi her başladığında servisleri çalıştıran, logları toplayan abimizdir.
 
-`Linux’ta çalıştırdığımız web ve uygulama sunucuları, SSH, DNS, telnet, vb servisler systemd veya benzeri (örneğin upstart) bir init system tarafından yönetilirler. Bu sistemlere init system denmesinin sebebi, Linux'un bu sistemleri açılış sırasında (boot) diğer process'leri başlatan ve PID (Process ID) 1 ile ifade edilen init process'i olarak kullanmasıdır([kaynak](gokhansengun)).`
+>Linux’ta çalıştırdığımız web ve uygulama sunucuları, SSH, DNS, telnet, vb servisler systemd veya benzeri (örneğin upstart) bir init system tarafından yönetilirler. Bu sistemlere init system denmesinin sebebi, Linux'un bu sistemleri açılış sırasında (boot) diğer process'leri başlatan ve PID (Process ID) 1 ile ifade edilen init process'i olarak kullanmasıdır([kaynak](https://gokhansengun.com/)).
 
 ## systemctl
 
