@@ -161,7 +161,7 @@ Terminal, metin tabanlı komutları yazabileceğiniz ve uygulayabileceğiniz bir
 
 # SSH Servisi
 
-İki sistem arasında ister yerel ağdaki bağlantıların isterse uzak bağlantıların güvenli bir şekilde yapılabilmesini sağlayan bir protokoldür. Bağlantı yapılan iki sistemin arasındaki t üm ağ trafiği şifrelenerek verilerin güvenliği sağlanır.
+İki sistem arasında ister yerel ağdaki bağlantıların isterse uzak bağlantıların güvenli bir şekilde yapılabilmesini sağlayan bir protokoldür. Bağlantı yapılan iki sistemin arasındaki tüm ağ trafiği şifrelenerek verilerin güvenliği sağlanır.
 
 Bağlantı yapılırken kimlik doğrulaması yapılmaktadır. Bu kimlik doğrulamasından sonra istemci ile sunucu arasında bir şifreleme oluşur ve bu şifreleme ile haberleşirler. Ssh için istemci ve sunucuda ssh servisinin yüklü olması gereklidir.[Linux komut satırı - Kemal Demirez]
 
@@ -233,7 +233,7 @@ dig buraksecer.com -t NS //name server listeler
 
 ##  curl
 
-client url kısaltınca c-url -> curl olmuş :tw-1f37a: 
+client url kısaltınca c-url -> curl olmuş :tea: 
 
 Sitelerle iletişim kurmamızı sağlayan komuttur. Http protokolü en bilindik kullanımdır ayrıca;
 
@@ -257,7 +257,7 @@ Hadi bir get isteği atalım;
 curl https://www.buraksecer.com //sitenin içeriğini size döner. 
 ```
 
-Eğer benim güncel cv mi komutu çalıştırdığınız dizine indirmek istiyorsanız buyrun :tw-1f60e: 
+Eğer benim güncel cv mi komutu çalıştırdığınız dizine indirmek istiyorsanız buyrun :sunglasses: 
 
 ```shell
 curl -o burak.pdf https://www.buraksecer.com/wp-content/uploads/2021/12/burak-secer-up.pdf
@@ -320,7 +320,7 @@ uname
 - who am i: who'dan farklı daha detaylı bir bilgi sağlar.
 
 ```shell
-wr
+w
 
 who
 
