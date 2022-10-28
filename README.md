@@ -11,6 +11,7 @@
 |------------|-------------------------------------------------------------------------------------------------| ------------ | 
 | Counter    | [Tıklaa](https://github.com/buraksecer/linux-101/tree/master/shell-scripts/tr/counter "Tıklaa") | [Click Me!](https://github.com/buraksecer/linux-101/tree/master/shell-scripts/eng/counter "Click Me!") |
 | Copy       | [Tıklaa](https://github.com/buraksecer/linux-101/tree/master/shell-scripts/tr/copy "Tıklaa")    | [Click Me!](https://github.com/buraksecer/linux-101/tree/master/shell-scripts/eng/copy "Click Me!") |
+| Parameter    | [Tıklaa](https://github.com/buraksecer/linux-101/tree/master/shell-scripts/tr/parameter "Tıklaa")  | [Click Me!](https://github.com/buraksecer/linux-101/tree/master/shell-scripts/eng/parameter "Click Me!") |
 
 # Linux 101
 
