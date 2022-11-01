@@ -83,6 +83,9 @@
   * [zip](#zip)
   * [gzip](#gzip)
   * [tar](#tar) 
+* [Linux'a Nasıl Yükleriz?](#)
+  * [Docker Cli](#)
+  * [Docker Compose Cli](#)
 
 ------------
 
@@ -1143,3 +1146,9 @@ Tar açma,
 ```shell
 tar -xvf test.tar
 ```
+
+# Linux'a Nasıl Yükleriz?
+
+## Docker Cli
+
+## Docker Compose Cli
