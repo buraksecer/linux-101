@@ -79,9 +79,9 @@
   * [zip](#zip)
   * [gzip](#gzip)
   * [tar](#tar) 
-* [How to Install to Linux?](#)
-  * [Docker Cli](#)
-  * [Docker Compose Cli](#)
+* [How to Install to Linux?](#how-to-install-to-linux)
+  * [Docker Cli](#docker-cli)
+  * [Docker Compose Cli](#docker-compose-cli)
 ------------
 
 # What is Linux?

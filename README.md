@@ -83,9 +83,9 @@
   * [zip](#zip)
   * [gzip](#gzip)
   * [tar](#tar) 
-* [Linux'a Nasıl Yükleriz?](#)
-  * [Docker Cli](#)
-  * [Docker Compose Cli](#)
+* [Linux'a Nasıl Yükleriz?](#linuxa-nasıl-yükleriz)
+  * [Docker Cli](#docker-cli)
+  * [Docker Compose Cli](#docker-compose-cli)
 
 ------------
 
