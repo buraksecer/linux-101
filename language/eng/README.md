@@ -1217,7 +1217,7 @@ docker --version
 
 ```
 
-Beklenen çıktı: ``Docker version 20.10.20, build 9fdeb9c`` 
+Output: ``Docker version 20.10.20, build 9fdeb9c`` 
 - Version info can changeble
 
 If we take version information, congratulations! :)
