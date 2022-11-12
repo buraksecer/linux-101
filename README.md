@@ -1155,7 +1155,7 @@ Aslında kolayca bir arama ile nasıl yüklersiniz bulabilirsiniz fakat günün 
 
 Ubuntu için kurulum adımları:
 
-1. 
+1. apt paket güncelleme işlemi ve repo ekleme
 
 ```
 sudo apt-get update
@@ -1167,14 +1167,14 @@ sudo apt-get install \
 
 ```
 
-2. 
+2. Docker resmi GPG key ekleme işlemi.
 
 ```
 sudo mkdir -p /etc/apt/keyrings
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg
 ```
 
-3. 
+3. Repository setup işlemi yapıyoruz.
 
 ```
 echo \
@@ -1183,20 +1183,14 @@ echo \
 
 ```
 
-4. 
+4. Bamm artık apt ye git update et dediğimiz zaman docker yüklenecek.
 
 ```
 sudo apt-get update
 
 ```
 
-5. 
-
-```
-sudo apt-get update
-```
-
-Eğer update hata verirse;
+5. Eğer update hata verirse;
 
 ```
 sudo chmod a+r /etc/apt/keyrings/docker.gpg
@@ -1204,6 +1198,18 @@ sudo apt-get update
 
 ```
 
+6. Tamam şimdi bakalım yükleyebildik mi?
+
+```
+
+docker --version
+
+```
+
+Beklenen çıktı: ``Docker version 20.10.20, build 9fdeb9c`` 
+- Versiyon bilgisi değişebilir tabii.
+
+Versiyon bilgisini alabildiysek tebrikler :)
 
 
 ## Docker Compose Cli
