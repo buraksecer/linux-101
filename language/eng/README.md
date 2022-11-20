@@ -1223,3 +1223,27 @@ Output: ``Docker version 20.10.20, build 9fdeb9c``
 If we take version information, congratulations! :)
 
 ## Docker Compose Cli
+
+The following command will download the 1.29.2 release and save the executable file at /usr/local/bin/docker-compose, which will make this software globally accessible as docker-compose
+
+```
+sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+
+```
+
+Next, set the correct permissions so that the docker-compose command is executable
+
+```
+sudo chmod +x /usr/local/bin/docker-compose
+
+```
+
+To verify that the installation was successful, you can run
+
+```
+docker-compose --version
+```
+
+Well done! If you have a output, done! 
+
+Output: ``docker-compose version 1.29.2, build 5becea4c`` ([source](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-compose-on-ubuntu-20-04))

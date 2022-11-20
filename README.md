@@ -1213,3 +1213,30 @@ Versiyon bilgisini alabildiysek tebrikler :)
 
 
 ## Docker Compose Cli
+
+Aşağıdaki komutları sırayla çalıştırdığımız zaman docker-compose cli kurulmuş olacaktır.
+
+İlk olarak burada dikkat etmemiz gereken versiyondur. Ben 1.29.2 kullandım ama siz günceli kullanabilirsiniz. Bu komut /usr/local/bin/docker-compose klasörüne indirme işlemi yapacaktır.
+
+```
+sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+
+```
+
+Curl ile indirme yaptıktan sonra gerekli izinleri tanımlıyoruz.
+
+```
+sudo chmod +x /usr/local/bin/docker-compose
+
+```
+
+Ve izinden sonra işlem tamam! Bakalım versiyon komutu çalışacak mı?
+
+```
+docker-compose --version
+```
+
+Eğer bir çıktı aldıysanız bravo!
+
+Beklenen çıktı: ``docker-compose version 1.29.2, build 5becea4c`` 
+([kaynak](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-compose-on-ubuntu-20-04))
