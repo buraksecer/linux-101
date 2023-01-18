@@ -86,6 +86,8 @@
 * [Linux'a Nasıl Yükleriz?](#linuxa-nasıl-yükleriz)
   * [Docker Cli](#docker-cli)
   * [Docker Compose Cli](#docker-compose-cli)
+  
+* [Ekstralar](#ekstralar)
 
 ------------
 
